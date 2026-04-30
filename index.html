@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><style data-unocss-runtime-layer="properties">/* layer: properties */
-@supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))){*, ::before, ::after, ::backdrop{--un-leading:initial;--un-bg-opacity:100%;--un-stroke-opacity:100%;--un-border-opacity:100%;--un-from-opacity:100%;--un-to-opacity:100%;--un-text-opacity:100%;--un-translate-x:initial;--un-translate-y:initial;--un-translate-z:initial;--un-space-x-reverse:initial;}}
+@supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))){*, ::before, ::after, ::backdrop{--un-bg-opacity:100%;--un-stroke-opacity:100%;--un-leading:initial;--un-border-opacity:100%;--un-text-opacity:100%;--un-from-opacity:100%;--un-to-opacity:100%;--un-translate-x:initial;--un-translate-y:initial;--un-translate-z:initial;--un-space-x-reverse:initial;}}
 @property --un-text-opacity{syntax:"<percentage>";inherits:false;initial-value:100%;}
 @property --un-leading{syntax:"*";inherits:false;}
 @property --un-border-opacity{syntax:"<percentage>";inherits:false;initial-value:100%;}
@@ -432,7 +432,7 @@
 .lg\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr));}
 }</style><head><link rel="stylesheet" href="/node_modules/@bootstrapp/uix/theme.css">
   <meta charset="utf-8">
-  <title>Preview</title>
+  <title>undefined</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script type="importmap">{
   "imports": {
@@ -703,92 +703,6 @@
 }
 
 
-:where(.uix-testimonial-section, uix-testimonial-section) {
-  display: block;
-
-  .testimonial-eyebrow {
-    display: inline-block;
-    background: var(--color-surface-inverse);
-    color: var(--color-surface);
-    font-size: var(--text-eyebrow);
-    font-weight: var(--font-bold);
-    padding: 6px var(--spacing-lg);
-    border-radius: var(--radius-full);
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    margin-bottom: var(--spacing-xl);
-  }
-
-  .testimonial-headline {
-    font-size: var(--text-section);
-    font-weight: var(--font-black);
-    letter-spacing: -0.03em;
-    color: var(--color-text-primary);
-    margin-bottom: var(--spacing-lg);
-  }
-
-  .testimonial-subheadline {
-    font-size: var(--text-subhead);
-    font-weight: var(--font-medium);
-    color: var(--color-text-secondary);
-    max-width: 500px;
-    margin: 0 auto;
-  }
-
-  .testimonial-card {
-    background: var(--color-surface);
-    border-radius: var(--radius-hero);
-    border: 1px solid
-      color-mix(in srgb, var(--color-text-primary) 8%, transparent);
-    padding: var(--spacing-2xl);
-    box-shadow: var(--shadow-card);
-    transition: all 0.3s ease;
-
-    &:hover {
-      box-shadow: var(--shadow-card-hover);
-      transform: translateY(-4px);
-    }
-  }
-
-  .testimonial-star {
-    fill: var(--color-warning);
-    color: var(--color-warning);
-  }
-
-  .testimonial-quote {
-    font-size: var(--text-body);
-    font-weight: var(--font-medium);
-    color: var(--color-text-secondary);
-    line-height: 1.65;
-    margin-bottom: var(--spacing-xl);
-  }
-
-  .testimonial-avatar {
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: var(--radius-full);
-    object-fit: cover;
-    background: color-mix(
-      in srgb,
-      var(--color-text-primary) 6%,
-      transparent
-    );
-  }
-
-  .testimonial-author {
-    font-size: 14px;
-    font-weight: var(--font-bold);
-    color: var(--color-text-primary);
-  }
-
-  .testimonial-role {
-    font-size: 12px;
-    font-weight: var(--font-medium);
-    color: var(--color-text-muted);
-  }
-}
-
-
 :where(.uix-faq-section, uix-faq-section) {
   display: block;
 
@@ -979,13 +893,11 @@
 }
 
 
-:where(.uix-steps-section, uix-steps-section) {
+:where(.uix-testimonial-section, uix-testimonial-section) {
   display: block;
 
-  .steps-eyebrow {
-    display: inline-flex;
-    align-items: center;
-    gap: var(--spacing-sm);
+  .testimonial-eyebrow {
+    display: inline-block;
     background: var(--color-surface-inverse);
     color: var(--color-surface);
     font-size: var(--text-eyebrow);
@@ -994,10 +906,10 @@
     border-radius: var(--radius-full);
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    margin-bottom: 1.25rem;
+    margin-bottom: var(--spacing-xl);
   }
 
-  .steps-headline {
+  .testimonial-headline {
     font-size: var(--text-section);
     font-weight: var(--font-black);
     letter-spacing: -0.03em;
@@ -1005,48 +917,35 @@
     margin-bottom: var(--spacing-lg);
   }
 
-  .steps-subheadline {
+  .testimonial-subheadline {
     font-size: var(--text-subhead);
     font-weight: var(--font-medium);
     color: var(--color-text-secondary);
-    max-width: 520px;
+    max-width: 500px;
     margin: 0 auto;
   }
 
-  .step-icon-box {
-    width: 3.5rem;
-    height: 3.5rem;
-    border-radius: var(--radius-lg);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .testimonial-card {
+    background: var(--color-surface);
+    border-radius: var(--radius-hero);
     border: 1px solid
       color-mix(in srgb, var(--color-text-primary) 8%, transparent);
-    box-shadow: var(--shadow-sm);
+    padding: var(--spacing-2xl);
+    box-shadow: var(--shadow-card);
+    transition: all 0.3s ease;
+
+    &:hover {
+      box-shadow: var(--shadow-card-hover);
+      transform: translateY(-4px);
+    }
   }
 
-  .step-icon {
-    width: 1.5rem;
-    height: 1.5rem;
+  .testimonial-star {
+    fill: var(--color-warning);
+    color: var(--color-warning);
   }
 
-  .step-number {
-    font-size: var(--text-eyebrow);
-    font-weight: var(--font-bold);
-    color: var(--color-text-muted);
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-  }
-
-  .step-title {
-    font-size: 1.5rem;
-    font-weight: var(--font-bold);
-    color: var(--color-text-primary);
-    letter-spacing: -0.02em;
-    line-height: 1.2;
-  }
-
-  .step-description {
+  .testimonial-quote {
     font-size: var(--text-body);
     font-weight: var(--font-medium);
     color: var(--color-text-secondary);
@@ -1054,68 +953,28 @@
     margin-bottom: var(--spacing-xl);
   }
 
-  .step-cta {
-    display: inline-flex;
-    align-items: center;
-    gap: var(--spacing-sm);
-    font-size: var(--text-caption);
-    font-weight: var(--font-bold);
-    color: var(--color-text-primary);
-    background: var(--color-surface);
-    border: 1px solid
-      color-mix(in srgb, var(--color-text-primary) 10%, transparent);
-    padding: 10px 1.25rem;
+  .testimonial-avatar {
+    width: 2.5rem;
+    height: 2.5rem;
     border-radius: var(--radius-full);
-    box-shadow: var(--shadow-sm);
-    transition: all 0.2s ease;
-
-    &:hover {
-      background: color-mix(
-        in srgb,
-        var(--color-text-primary) 3%,
-        var(--color-surface)
-      );
-      gap: var(--spacing-md);
-    }
-  }
-
-  .step-mockup-glow {
-    position: absolute;
-    inset: 0;
-    border-radius: 32px;
-    filter: blur(2rem);
-    opacity: 0.5;
-    transform: scale(0.95);
-  }
-
-  .steps-footer-divider {
-    width: 1px;
-    height: 3rem;
-    background: linear-gradient(
-      to bottom,
-      color-mix(in srgb, var(--color-text-primary) 12%, transparent),
+    object-fit: cover;
+    background: color-mix(
+      in srgb,
+      var(--color-text-primary) 6%,
       transparent
     );
   }
 
-  .steps-footer-cta {
-    display: inline-flex;
-    align-items: center;
-    gap: var(--spacing-sm);
-    background: var(--color-primary);
-    color: var(--color-surface);
-    padding: var(--spacing-md) 1.5rem;
-    border-radius: var(--radius-full);
+  .testimonial-author {
+    font-size: 14px;
     font-weight: var(--font-bold);
-    font-size: var(--text-caption);
-    box-shadow: var(--shadow-lg);
-    cursor: pointer;
-    transition: all 0.2s ease;
+    color: var(--color-text-primary);
+  }
 
-    &:hover {
-      background: var(--color-secondary, var(--color-primary-dark));
-      transform: translateY(-2px);
-    }
+  .testimonial-role {
+    font-size: 12px;
+    font-weight: var(--font-medium);
+    color: var(--color-text-muted);
   }
 }
 
@@ -1372,6 +1231,147 @@
 
     &:hover {
       background: color-mix(in srgb, var(--color-surface) 90%, transparent);
+    }
+  }
+}
+
+
+:where(.uix-steps-section, uix-steps-section) {
+  display: block;
+
+  .steps-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    background: var(--color-surface-inverse);
+    color: var(--color-surface);
+    font-size: var(--text-eyebrow);
+    font-weight: var(--font-bold);
+    padding: 6px var(--spacing-lg);
+    border-radius: var(--radius-full);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 1.25rem;
+  }
+
+  .steps-headline {
+    font-size: var(--text-section);
+    font-weight: var(--font-black);
+    letter-spacing: -0.03em;
+    color: var(--color-text-primary);
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .steps-subheadline {
+    font-size: var(--text-subhead);
+    font-weight: var(--font-medium);
+    color: var(--color-text-secondary);
+    max-width: 520px;
+    margin: 0 auto;
+  }
+
+  .step-icon-box {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: var(--radius-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid
+      color-mix(in srgb, var(--color-text-primary) 8%, transparent);
+    box-shadow: var(--shadow-sm);
+  }
+
+  .step-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .step-number {
+    font-size: var(--text-eyebrow);
+    font-weight: var(--font-bold);
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+  }
+
+  .step-title {
+    font-size: 1.5rem;
+    font-weight: var(--font-bold);
+    color: var(--color-text-primary);
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+  }
+
+  .step-description {
+    font-size: var(--text-body);
+    font-weight: var(--font-medium);
+    color: var(--color-text-secondary);
+    line-height: 1.65;
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .step-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    font-size: var(--text-caption);
+    font-weight: var(--font-bold);
+    color: var(--color-text-primary);
+    background: var(--color-surface);
+    border: 1px solid
+      color-mix(in srgb, var(--color-text-primary) 10%, transparent);
+    padding: 10px 1.25rem;
+    border-radius: var(--radius-full);
+    box-shadow: var(--shadow-sm);
+    transition: all 0.2s ease;
+
+    &:hover {
+      background: color-mix(
+        in srgb,
+        var(--color-text-primary) 3%,
+        var(--color-surface)
+      );
+      gap: var(--spacing-md);
+    }
+  }
+
+  .step-mockup-glow {
+    position: absolute;
+    inset: 0;
+    border-radius: 32px;
+    filter: blur(2rem);
+    opacity: 0.5;
+    transform: scale(0.95);
+  }
+
+  .steps-footer-divider {
+    width: 1px;
+    height: 3rem;
+    background: linear-gradient(
+      to bottom,
+      color-mix(in srgb, var(--color-text-primary) 12%, transparent),
+      transparent
+    );
+  }
+
+  .steps-footer-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    background: var(--color-primary);
+    color: var(--color-surface);
+    padding: var(--spacing-md) 1.5rem;
+    border-radius: var(--radius-full);
+    font-weight: var(--font-bold);
+    font-size: var(--text-caption);
+    box-shadow: var(--shadow-lg);
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background: var(--color-secondary, var(--color-primary-dark));
+      transform: translateY(-2px);
     }
   }
 }
@@ -2748,18 +2748,11 @@
   --border-color: rgba(0,0,0,0.06);
 }</style></head>
 <body>
-  <script>
-    window.__WEBSITE__ = {"slug":"bootstrapp2","path":"/"};
-    window.__BOOTSTRAPP_MANIFEST__ = {"importmaps":{"base":{"html-to-image":"https://esm.sh/html-to-image","bootstrapp":"/node_modules/@bootstrapp/base/app.js","lit-html":"https://esm.sh/lit-html","lit-html/":"https://esm.sh/lit-html/","@bootstrapp/view":"/node_modules/@bootstrapp/view/index.js","@bootstrapp/view/loader":"/node_modules/@bootstrapp/view/loader.js","@bootstrapp/view/discovery":"/node_modules/@bootstrapp/view/discovery.js","@bootstrapp/events":"/node_modules/@bootstrapp/events/index.js","@unocss/core":"https://esm.sh/@unocss/core","@unocss/preset-uno":"https://esm.sh/@unocss/preset-uno","@unocss/preset-wind":"https://esm.sh/@unocss/preset-wind","@bootstrapp/controller":"/node_modules/@bootstrapp/controller/index.js","@bootstrapp/controller/signal":"/node_modules/@bootstrapp/controller/signal.js","@bootstrapp/controller/store":"/node_modules/@bootstrapp/controller/store.js","@bootstrapp/controller/sync":"/node_modules/@bootstrapp/controller/sync.js","@bootstrapp/controller/view":"/node_modules/@bootstrapp/controller/view.js","@bootstrapp/controller/app":"/node_modules/@bootstrapp/controller/app.js","@bootstrapp/controller/adapters/storage":"/node_modules/@bootstrapp/controller/adapters/storage.js","@bootstrapp/controller/adapters/url":"/node_modules/@bootstrapp/controller/adapters/url.js","pocketbase":"https://esm.sh/pocketbase","@bootstrapp/model":"/node_modules/@bootstrapp/model/index.js","@bootstrapp/model/frontend":"/node_modules/@bootstrapp/model/frontend.js","@bootstrapp/model/backend":"/node_modules/@bootstrapp/model/backend.js","@bootstrapp/model/subscription-manager":"/node_modules/@bootstrapp/model/subscription-manager.js","@bootstrapp/model/query-builder":"/node_modules/@bootstrapp/model/query-builder.js","@bootstrapp/model/row-utils":"/node_modules/@bootstrapp/model/row-utils.js","@bootstrapp/model/factory":"/node_modules/@bootstrapp/model/factory.js","@bootstrapp/model/adapter-base":"/node_modules/@bootstrapp/model/adapter-base.js","@bootstrapp/model/slug":"/node_modules/@bootstrapp/model/slug.js","@bootstrapp/model/schema-loader":"/node_modules/@bootstrapp/model/schema-loader.js","@bootstrapp/model-indexeddb":"/node_modules/@bootstrapp/model-indexeddb/index.js","@bootstrapp/model-indexeddb/adapter":"/node_modules/@bootstrapp/model-indexeddb/adapter.js","@bootstrapp/model-indexeddb/system-model-manager":"/node_modules/@bootstrapp/model-indexeddb/system-model-manager.js","@bootstrapp/router":"/node_modules/@bootstrapp/router/index.js","@bootstrapp/router/core":"/node_modules/@bootstrapp/router/core.js","@bootstrapp/router/app":"/node_modules/@bootstrapp/router/app.js","@bootstrapp/router/matcher":"/node_modules/@bootstrapp/router/matcher.js","@bootstrapp/router/i18n":"/node_modules/@bootstrapp/router/i18n.js","@bootstrapp/router/adapters/browser":"/node_modules/@bootstrapp/router/adapters/browser.js","@bootstrapp/router/adapters/memory":"/node_modules/@bootstrapp/router/adapters/memory.js","@bootstrapp/router/plugins/signal":"/node_modules/@bootstrapp/router/plugins/signal.js","@bootstrapp/types":"/node_modules/@bootstrapp/types/index.js","node_modules/@bootstrapp":"/node_modules/@bootstrapp/base/app.js","fflate":"https://cdn.jsdelivr.net/npm/fflate@0.8.2/+esm"},"admin":{"html-to-image":"https://esm.sh/html-to-image","bootstrapp":"/node_modules/@bootstrapp/base/app.js","lit-html":"https://esm.sh/lit-html","lit-html/":"https://esm.sh/lit-html/","@bootstrapp/view":"/node_modules/@bootstrapp/view/index.js","@bootstrapp/view/loader":"/node_modules/@bootstrapp/view/loader.js","@bootstrapp/view/discovery":"/node_modules/@bootstrapp/view/discovery.js","@bootstrapp/events":"/node_modules/@bootstrapp/events/index.js","@unocss/core":"https://esm.sh/@unocss/core","@unocss/preset-uno":"https://esm.sh/@unocss/preset-uno","@unocss/preset-wind":"https://esm.sh/@unocss/preset-wind","@bootstrapp/controller":"/node_modules/@bootstrapp/controller/index.js","@bootstrapp/controller/signal":"/node_modules/@bootstrapp/controller/signal.js","@bootstrapp/controller/store":"/node_modules/@bootstrapp/controller/store.js","@bootstrapp/controller/sync":"/node_modules/@bootstrapp/controller/sync.js","@bootstrapp/controller/view":"/node_modules/@bootstrapp/controller/view.js","@bootstrapp/controller/app":"/node_modules/@bootstrapp/controller/app.js","@bootstrapp/controller/adapters/storage":"/node_modules/@bootstrapp/controller/adapters/storage.js","@bootstrapp/controller/adapters/url":"/node_modules/@bootstrapp/controller/adapters/url.js","pocketbase":"https://esm.sh/pocketbase","@bootstrapp/model":"/node_modules/@bootstrapp/model/index.js","@bootstrapp/model/frontend":"/node_modules/@bootstrapp/model/frontend.js","@bootstrapp/model/backend":"/node_modules/@bootstrapp/model/backend.js","@bootstrapp/model/subscription-manager":"/node_modules/@bootstrapp/model/subscription-manager.js","@bootstrapp/model/query-builder":"/node_modules/@bootstrapp/model/query-builder.js","@bootstrapp/model/row-utils":"/node_modules/@bootstrapp/model/row-utils.js","@bootstrapp/model/factory":"/node_modules/@bootstrapp/model/factory.js","@bootstrapp/model/adapter-base":"/node_modules/@bootstrapp/model/adapter-base.js","@bootstrapp/model/slug":"/node_modules/@bootstrapp/model/slug.js","@bootstrapp/model/schema-loader":"/node_modules/@bootstrapp/model/schema-loader.js","@bootstrapp/model-indexeddb":"/node_modules/@bootstrapp/model-indexeddb/index.js","@bootstrapp/model-indexeddb/adapter":"/node_modules/@bootstrapp/model-indexeddb/adapter.js","@bootstrapp/model-indexeddb/system-model-manager":"/node_modules/@bootstrapp/model-indexeddb/system-model-manager.js","@bootstrapp/router":"/node_modules/@bootstrapp/router/index.js","@bootstrapp/router/core":"/node_modules/@bootstrapp/router/core.js","@bootstrapp/router/app":"/node_modules/@bootstrapp/router/app.js","@bootstrapp/router/matcher":"/node_modules/@bootstrapp/router/matcher.js","@bootstrapp/router/i18n":"/node_modules/@bootstrapp/router/i18n.js","@bootstrapp/router/adapters/browser":"/node_modules/@bootstrapp/router/adapters/browser.js","@bootstrapp/router/adapters/memory":"/node_modules/@bootstrapp/router/adapters/memory.js","@bootstrapp/router/plugins/signal":"/node_modules/@bootstrapp/router/plugins/signal.js","@bootstrapp/types":"/node_modules/@bootstrapp/types/index.js","node_modules/@bootstrapp":"/node_modules/@bootstrapp/base/app.js","fflate":"https://cdn.jsdelivr.net/npm/fflate@0.8.2/+esm"}},"packages":{"agent":{"components":{"agent":"views/"},"hasSchema":true},"base":{"components":{"app":"app/"}},"github":{"components":{"github":"views/"}},"ide":{"components":{"ide":"views/"},"hasSchema":true,"namespace":false},"router":{"components":{"router":"./"}},"sw":{"components":{"sw":"views/"}},"uix":{"components":{"uix":{"accordion":"navigation/accordion","breadcrumbs":"navigation/breadcrumbs","menu":"navigation/menu","navbar":"navigation/navbar","nav-item":"navigation/nav-item","pagination":"navigation/pagination","sidebar":"navigation/sidebar","tabs":"navigation/tabs","tree":"navigation/tree","tree-item":"navigation/tree-item","wizard":"navigation/wizard","alert-dialog":"overlay/alert-dialog","bottom-sheet":"overlay/bottom-sheet","drawer":"overlay/drawer","dropdown":"overlay/dropdown","modal":"overlay/modal","overlay":"overlay/overlay","popover":"overlay/popover","tooltip":"overlay/tooltip","popover-controller":"overlay/popover-controller","avatar":"display/avatar","badge":"display/badge","button":"display/button","calendar":"display/calendar","circle":"display/circle","editable":"display/editable","heading":"display/heading","icon":"display/icon","icon-picker":"form/icon-picker","image":"display/image","link":"display/link","list":"display/list","list-item":"display/list-item","markdown":"display/markdown","media":"display/media","pattern":"display/pattern","stat":"display/stat","table":"display/table","data-table":"display/data-table","tag":"display/tag","text":"display/text","bar-chart":"display/bar-chart","line-chart":"display/line-chart","sparkline":"display/sparkline","pie-chart":"display/pie-chart","card":"layout/card","container":"layout/container","divider":"layout/divider","flex":"layout/flex","grid":"layout/grid","panel":"layout/panel","section":"layout/section","split-pane":"layout/split-pane","app-container":"app/app-container","app-shell":"app/app-shell","app-header":"app/app-header","bottom-nav":"app/bottom-nav","title-bar":"app/title-bar","progress-bar":"feedback/progress-bar","skeleton":"feedback/skeleton","spinner":"feedback/spinner","toast":"feedback/toast","alert":"feedback/alert","device":"utility/device","clipboard":"utility/clipboard","darkmode":"utility/darkmode","draggable":"utility/draggable","droparea":"utility/droparea","indexeddb-explorer":"utility/indexeddb-explorer","seo":"utility/seo","theme-toggle":"utility/theme-toggle","auth-form":"form/auth-form","checkbox":"form/checkbox","code":"form/code","file-upload":"form/file-upload","form":"form/form","form-control":"form/form-control","label":"form/label","input":"form/input","join":"form/join","number-input":"form/number-input","radio":"form/radio","radio-group":"form/radio-group","rating":"form/rating","select":"form/select","slider":"form/slider","switch":"form/switch","textarea":"form/textarea","time":"form/time","showcase":"docs/showcase","showcase-preview":"docs/showcase-preview","showcase-code-viewer":"docs/showcase-code-viewer","showcase-property-editor":"docs/showcase-property-editor","theme-generator":"docs/theme-generator","theme-editor":"theme/editor","ide-sidebar":"views/ide-sidebar","page":"layout/page","float-card":"page/float-card","site-header":"page/site-header","hero-section":"page/hero-section","feature-grid":"page/feature-grid","testimonial-section":"page/testimonial-section","faq-section":"page/faq-section","cta-section":"page/cta-section","footer":"page/footer","steps-section":"page/steps-section","about-section":"page/about-section","showcase-section":"page/showcase-section","pricing-card":"page/pricing-card","pricing-table":"page/pricing-table","stats-section":"page/stats-section"}}},"admin":{"components":{"admin":"views/"}},"cms":{"components":{"cms":"views/"},"hasSchema":true},"devops":{"components":{"devops":"views/"},"hasSchema":true},"theme":{"components":{"theme":"views/"}}},"components":{"bsp":{"home":"views/home.js","home-sidebar":"views/home-sidebar.js","recent":"views/recent.js","raw-view":"views/raw-view.js"}},"database":{"adapter":"indexeddb","adapters":{"indexeddb":{"name":"bootstrapp","version":1}}},"basePath":"","theme":{"path":"/theme.js","admin":"gruvbox-dark","font":{"family":"system-ui, 'Manrope', 'Inter'","google":["Manrope"]},"icon":{"family":"lucide"},"runtime":true},"dev":true,"skipRouterInit":true,"websiteSlug":"bootstrapp2"};
-  </script>
-  <script type="module" src="/dev.js?v=1777566358392"></script>
-  <script type="module" src="/node_modules/@bootstrapp/base/app-entry.js"></script>
-
-<uix-page class="uix-page"><!---->
-      <!--?lit$796431132$--><uix-site-header class="uix-site-header"><!---->
+  <app-container class="app-container"><!----><bsp-website-page slug="asdasd" pagepath="/_website/asdasd" class="bsp-website-page"><!----><uix-page class="uix-page"><!---->
+      <!--?lit$887248546$--><uix-site-header class="uix-site-header"><!---->
       <nav class="site-header-nav fixed top-6 left-0 right-0 z-50 mx-auto p-1.5 hidden md:flex items-center w-max">
-        <a class="site-header-brand flex items-center justify-center mr-6 ml-1 cursor-pointer" href="#" aria-label="Bootstrapp2">
-          <!--?lit$796431132$-->
+        <a class="site-header-brand flex items-center justify-center mr-6 ml-1 cursor-pointer" href="#" aria-label="asdasd">
+          <!--?lit$887248546$-->
   <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
     <circle cx="12" cy="12" r="10" fill="url(#paint_logo)"></circle>
     <path d="M12 5V19M5 12H19M8 8L16 16M8 16L16 8" stroke="white" stroke-width="2" stroke-linecap="round"></path>
@@ -2774,50 +2767,50 @@
 
         </a>
         <ul class="site-header-links flex items-center gap-7">
-          <!--?lit$796431132$--><!---->
+          <!--?lit$887248546$--><!---->
               <li>
-                <a href="#how-it-works"><!--?lit$796431132$-->How It Works</a>
+                <a href="#how-it-works"><!--?lit$887248546$-->How It Works</a>
               </li>
             <!----><!---->
               <li>
-                <a href="#features"><!--?lit$796431132$-->Why Bootstrapp2?</a>
+                <a href="#features"><!--?lit$887248546$-->Why asdasd?</a>
               </li>
             <!----><!---->
               <li>
-                <a href="#testimonials"><!--?lit$796431132$-->Case Studies</a>
+                <a href="#testimonials"><!--?lit$887248546$-->Case Studies</a>
               </li>
             <!----><!---->
               <li>
-                <a href="#faq"><!--?lit$796431132$-->FAQ</a>
+                <a href="#faq"><!--?lit$887248546$-->FAQ</a>
               </li>
             <!----><!---->
               <li>
-                <a href="#"><!--?lit$796431132$-->Pricing</a>
+                <a href="#"><!--?lit$887248546$-->Pricing</a>
               </li>
             <!---->
         </ul>
         <div class="site-header-divider flex items-center gap-4 ml-6 pl-6">
-          <!--?lit$796431132$--><!----><a class="site-header-action-secondary px-2" href="#"><!--?lit$796431132$-->Login</a><!----><!----><a class="site-header-action-primary px-6 py-2.5" href="#"><!--?lit$796431132$-->Contact Us</a><!---->
+          <!--?lit$887248546$--><!----><a class="site-header-action-secondary px-2" href="#"><!--?lit$887248546$-->Login</a><!----><!----><a class="site-header-action-primary px-6 py-2.5" href="#"><!--?lit$887248546$-->Contact Us</a><!---->
         </div>
       </nav>
     </uix-site-header>
-      <!--?lit$796431132$--><!----><uix-hero-section headline="Build Modern Web Apps &lt;br&gt;Without the Bloat " subheadline="the lightweight framework" class="uix-hero-section"><!---->
+      <!--?lit$887248546$--><!----><uix-hero-section headline="Build Modern Web Apps &lt;br&gt;Without the Bloat " subheadline="asdasd" class="uix-hero-section"><!---->
       <section class="relative pt-36 pb-24 px-4 min-h-[100vh] flex flex-col items-center">
         <div class="hero-bg"></div>
         <div class="max-w-[850px] mx-auto text-center z-10">
-          <!--?lit$796431132$--><a class="hero-eyebrow" href="#">
-                <!--?lit$796431132$--><span class="hero-eyebrow-badge"><!--?lit$796431132$-->New</span>
-                <span class="hero-eyebrow-label"><!--?lit$796431132$-->Frontend Framework</span>
-                <!--?lit$796431132$--><span class="hero-eyebrow-meta"><!--?lit$796431132$-->Try now ›</span>
+          <!--?lit$887248546$--><a class="hero-eyebrow" href="#">
+                <!--?lit$887248546$--><span class="hero-eyebrow-badge"><!--?lit$887248546$-->New</span>
+                <span class="hero-eyebrow-label"><!--?lit$887248546$-->Frontend Framework</span>
+                <!--?lit$887248546$--><span class="hero-eyebrow-meta"><!--?lit$887248546$-->Try now ›</span>
               </a>
-          <h1 class="hero-headline"><!--?lit$796431132$-->Build Modern Web Apps <br>Without the Bloat </h1>
-          <p class="hero-subheadline"><!--?lit$796431132$-->the lightweight framework</p>
+          <h1 class="hero-headline"><!--?lit$887248546$-->Build Modern Web Apps <br>Without the Bloat </h1>
+          <p class="hero-subheadline"><!--?lit$887248546$-->asdasd</p>
           <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <!--?lit$796431132$--><!----><a class="hero-cta hero-cta-primary w-full sm:w-auto" href="#"><!--?lit$796431132$-->Get Started</a><!----><!----><a class="hero-cta hero-cta-secondary w-full sm:w-auto" href="#"><!--?lit$796431132$-->View on GitHub</a><!---->
+            <!--?lit$887248546$--><!----><a class="hero-cta hero-cta-primary w-full sm:w-auto" href="#"><!--?lit$887248546$-->Get Started</a><!----><!----><a class="hero-cta hero-cta-secondary w-full sm:w-auto" href="#"><!--?lit$887248546$-->View on GitHub</a><!---->
           </div>
         </div>
         <div class="mt-20 relative w-full max-w-[1040px] z-20">
-          <!--?lit$796431132$-->
+          <!--?lit$887248546$-->
   <div>
     <uix-float-card animate="slow" hide="md" class="-left-8 md:-left-16 top-[30%] uix-float-card">
       <div class="bg-white/95 backdrop-blur-xl rounded-full p-2.5 pr-4 flex items-center gap-3 shadow-[0_24px_48px_-12px_rgba(0,0,0,0.1),0_0_0_1px_rgba(255,255,255,0.8)_inset] border border-white">
@@ -3013,19 +3006,19 @@
 
         </div>
       </section>
-    </uix-hero-section><!----><!----><uix-steps-section eyebrow="How It Works" eyebrowicon="circle-dot" headline="Three Steps to Shipping" subheadline="From install to deploy — here's everything you need to ship with Bootstrapp2." sectionid="how-it-works" class="uix-steps-section"><!---->
+    </uix-hero-section><!----><!----><uix-steps-section eyebrow="How It Works" eyebrowicon="circle-dot" headline="Three Steps to Shipping" subheadline="From install to deploy — here's everything you need to ship with asdasd." sectionid="how-it-works" class="uix-steps-section"><!---->
       <section class="py-28 px-6 overflow-hidden" id="how-it-works">
         <div class="max-w-6xl mx-auto">
           <div class="text-center mb-20">
-            <!--?lit$796431132$--><span class="steps-eyebrow">
-                  <!--?lit$796431132$--><uix-icon class="w-3 h-3 uix-icon" name="circle-dot" svg="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;g fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot;&gt;&lt;circle cx=&quot;12&quot; cy=&quot;12&quot; r=&quot;10&quot;/&gt;&lt;circle cx=&quot;12&quot; cy=&quot;12&quot; r=&quot;1&quot;/&gt;&lt;/g&gt;&lt;/svg&gt;"><!----><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="1"></circle></g></svg></uix-icon>
-                  <!--?lit$796431132$-->How It Works
+            <!--?lit$887248546$--><span class="steps-eyebrow">
+                  <!--?lit$887248546$--><uix-icon class="w-3 h-3 uix-icon" name="circle-dot" svg="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;g fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot;&gt;&lt;circle cx=&quot;12&quot; cy=&quot;12&quot; r=&quot;10&quot;/&gt;&lt;circle cx=&quot;12&quot; cy=&quot;12&quot; r=&quot;1&quot;/&gt;&lt;/g&gt;&lt;/svg&gt;"><!----><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="1"></circle></g></svg></uix-icon>
+                  <!--?lit$887248546$-->How It Works
                 </span>
-            <!--?lit$796431132$--><h2 class="steps-headline"><!--?lit$796431132$-->Three Steps to Shipping</h2>
-            <!--?lit$796431132$--><p class="steps-subheadline"><!--?lit$796431132$-->From install to deploy — here's everything you need to ship with Bootstrapp2.</p>
+            <!--?lit$887248546$--><h2 class="steps-headline"><!--?lit$887248546$-->Three Steps to Shipping</h2>
+            <!--?lit$887248546$--><p class="steps-subheadline"><!--?lit$887248546$-->From install to deploy — here's everything you need to ship with asdasd.</p>
           </div>
           <div class="flex flex-col gap-24">
-            <!--?lit$796431132$--><!---->
+            <!--?lit$887248546$--><!---->
                 <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
                   <div class="flex-1 max-w-[480px]">
                     <div class="flex items-center gap-4 mb-6">
@@ -3033,19 +3026,19 @@
                         <uix-icon class="step-icon uix-icon" name="users" style="color: #F59E0B;" svg="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;g fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot;&gt;&lt;path d=&quot;M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2&quot;/&gt;&lt;circle cx=&quot;9&quot; cy=&quot;7&quot; r=&quot;4&quot;/&gt;&lt;path d=&quot;M22 21v-2a4 4 0 0 0-3-3.87m-3-12a4 4 0 0 1 0 7.75&quot;/&gt;&lt;/g&gt;&lt;/svg&gt;"><!----><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M22 21v-2a4 4 0 0 0-3-3.87m-3-12a4 4 0 0 1 0 7.75"></path></g></svg></uix-icon>
                       </div>
                       <div>
-                        <span class="step-number">Step <!--?lit$796431132$-->01</span>
-                        <h3 class="step-title"><!--?lit$796431132$-->Install and Configure</h3>
+                        <span class="step-number">Step <!--?lit$887248546$-->01</span>
+                        <h3 class="step-title"><!--?lit$887248546$-->Install and Configure</h3>
                       </div>
                     </div>
-                    <p class="step-description"><!--?lit$796431132$-->Install the CLI, scaffold a project, and you're ready to build. Sensible defaults mean zero config for most apps.</p>
-                    <!--?lit$796431132$--><a class="step-cta group" href="#">
-                          <!--?lit$796431132$-->Learn more
+                    <p class="step-description"><!--?lit$887248546$-->Install the CLI, scaffold a project, and you're ready to build. Sensible defaults mean zero config for most apps.</p>
+                    <!--?lit$887248546$--><a class="step-cta group" href="#">
+                          <!--?lit$887248546$-->Learn more
                           <uix-icon name="arrow-right" class="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform uix-icon" svg="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;path fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot; d=&quot;M5 12h14m-7-7l7 7l-7 7&quot;/&gt;&lt;/svg&gt;"><!----><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-7-7l7 7l-7 7"></path></svg></uix-icon>
                         </a>
                   </div>
                   <div class="flex-1 max-w-[520px] w-full relative">
                     <div class="step-mockup-glow" style="background: linear-gradient(to bottom right, #FFF5EB, #FFFBF5);"></div>
-                    <div class="relative"><!--?lit$796431132$-->
+                    <div class="relative"><!--?lit$887248546$-->
   <div>
     <div class="bg-white rounded-[20px] border border-gray-100 shadow-[0_8px_30px_rgba(0,0,0,0.04)] p-5 w-full overflow-hidden">
       <div class="flex items-center justify-between mb-5">
@@ -3101,19 +3094,19 @@
                         <uix-icon class="step-icon uix-icon" name="zap" style="color: #3B82F6;" svg="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;path fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot; d=&quot;M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z&quot;/&gt;&lt;/svg&gt;"><!----><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg></uix-icon>
                       </div>
                       <div>
-                        <span class="step-number">Step <!--?lit$796431132$-->02</span>
-                        <h3 class="step-title"><!--?lit$796431132$-->Compose Components</h3>
+                        <span class="step-number">Step <!--?lit$887248546$-->02</span>
+                        <h3 class="step-title"><!--?lit$887248546$-->Compose Components</h3>
                       </div>
                     </div>
-                    <p class="step-description"><!--?lit$796431132$-->Object-literal components with lit-html templates and auto-importing. Write Light DOM widgets that play well with any CSS.</p>
-                    <!--?lit$796431132$--><a class="step-cta group" href="#">
-                          <!--?lit$796431132$-->Learn more
+                    <p class="step-description"><!--?lit$887248546$-->Object-literal components with lit-html templates and auto-importing. Write Light DOM widgets that play well with any CSS.</p>
+                    <!--?lit$887248546$--><a class="step-cta group" href="#">
+                          <!--?lit$887248546$-->Learn more
                           <uix-icon name="arrow-right" class="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform uix-icon" svg="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;path fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot; d=&quot;M5 12h14m-7-7l7 7l-7 7&quot;/&gt;&lt;/svg&gt;"><!----><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-7-7l7 7l-7 7"></path></svg></uix-icon>
                         </a>
                   </div>
                   <div class="flex-1 max-w-[520px] w-full relative">
                     <div class="step-mockup-glow" style="background: linear-gradient(to bottom right, #EFF6FF, #F5F8FF);"></div>
-                    <div class="relative"><!--?lit$796431132$-->
+                    <div class="relative"><!--?lit$887248546$-->
   <div>
     <div class="bg-white rounded-[20px] border border-gray-100 shadow-[0_8px_30px_rgba(0,0,0,0.04)] p-5 w-full overflow-hidden">
       <div class="flex items-center gap-2 mb-4">
@@ -3172,19 +3165,19 @@
                         <uix-icon class="step-icon uix-icon" name="file-text" style="color: #10B981;" svg="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;g fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot;&gt;&lt;path d=&quot;M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z&quot;/&gt;&lt;path d=&quot;M14 2v4a2 2 0 0 0 2 2h4M10 9H8m8 4H8m8 4H8&quot;/&gt;&lt;/g&gt;&lt;/svg&gt;"><!----><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path><path d="M14 2v4a2 2 0 0 0 2 2h4M10 9H8m8 4H8m8 4H8"></path></g></svg></uix-icon>
                       </div>
                       <div>
-                        <span class="step-number">Step <!--?lit$796431132$-->03</span>
-                        <h3 class="step-title"><!--?lit$796431132$-->Deploy Anywhere</h3>
+                        <span class="step-number">Step <!--?lit$887248546$-->03</span>
+                        <h3 class="step-title"><!--?lit$887248546$-->Deploy Anywhere</h3>
                       </div>
                     </div>
-                    <p class="step-description"><!--?lit$796431132$-->Ship to any static host, Cloudflare Workers, or your own server. The built-in Service Worker gives you offline support out of the box.</p>
-                    <!--?lit$796431132$--><a class="step-cta group" href="#">
-                          <!--?lit$796431132$-->Learn more
+                    <p class="step-description"><!--?lit$887248546$-->Ship to any static host, Cloudflare Workers, or your own server. The built-in Service Worker gives you offline support out of the box.</p>
+                    <!--?lit$887248546$--><a class="step-cta group" href="#">
+                          <!--?lit$887248546$-->Learn more
                           <uix-icon name="arrow-right" class="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform uix-icon" svg="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;path fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot; d=&quot;M5 12h14m-7-7l7 7l-7 7&quot;/&gt;&lt;/svg&gt;"><!----><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-7-7l7 7l-7 7"></path></svg></uix-icon>
                         </a>
                   </div>
                   <div class="flex-1 max-w-[520px] w-full relative">
                     <div class="step-mockup-glow" style="background: linear-gradient(to bottom right, #ECFDF5, #F0FCFA);"></div>
-                    <div class="relative"><!--?lit$796431132$-->
+                    <div class="relative"><!--?lit$887248546$-->
   <div>
     <div class="bg-white rounded-[20px] border border-gray-100 shadow-[0_8px_30px_rgba(0,0,0,0.04)] p-5 w-full overflow-hidden">
       <div class="flex justify-between items-center mb-4">
@@ -3230,94 +3223,94 @@
                 </div>
               <!---->
           </div>
-          <!--?lit$796431132$--><div class="flex flex-col items-center mt-16">
+          <!--?lit$887248546$--><div class="flex flex-col items-center mt-16">
                 <div class="steps-footer-divider"></div>
                 <a class="steps-footer-cta" href="#">
-                  <!--?lit$796431132$--><uix-icon class="w-4 h-4 uix-icon" name="sparkles" svg="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;path fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot; d=&quot;M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0zM20 3v4m2-2h-4M4 17v2m1-1H3&quot;/&gt;&lt;/svg&gt;"><!----><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0zM20 3v4m2-2h-4M4 17v2m1-1H3"></path></svg></uix-icon>
-                  <!--?lit$796431132$-->Get Started on GitHub
+                  <!--?lit$887248546$--><uix-icon class="w-4 h-4 uix-icon" name="sparkles" svg="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;path fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot; d=&quot;M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0zM20 3v4m2-2h-4M4 17v2m1-1H3&quot;/&gt;&lt;/svg&gt;"><!----><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0zM20 3v4m2-2h-4M4 17v2m1-1H3"></path></svg></uix-icon>
+                  <!--?lit$887248546$-->Get Started on GitHub
                   <uix-icon name="arrow-up-right" class="w-3.5 h-3.5 uix-icon" svg="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;path fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot; d=&quot;M7 7h10v10M7 17L17 7&quot;/&gt;&lt;/svg&gt;"><!----><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h10v10M7 17L17 7"></path></svg></uix-icon>
                 </a>
               </div>
         </div>
       </section>
-    </uix-steps-section><!----><!----><uix-feature-grid variant="dark" eyebrow="Features" headline="Why Developers Choose Bootstrapp2" subheadline="Everything you need to build fast, modern web apps without the complexity." sectionid="features" class="uix-feature-grid"><!---->
+    </uix-steps-section><!----><!----><uix-feature-grid variant="dark" eyebrow="Features" headline="Why Developers Choose asdasd" subheadline="Everything you need to build fast, modern web apps without the complexity." sectionid="features" class="uix-feature-grid"><!---->
       <section id="features" class="feature-grid-section feature-grid-section-dark">
         <div class="max-w-6xl mx-auto">
           <div class="text-center mb-16">
-            <!--?lit$796431132$--><span class="feature-grid-eyebrow"><!--?lit$796431132$-->Features</span>
-            <!--?lit$796431132$--><h2 class="feature-grid-headline"><!--?lit$796431132$-->Why Developers Choose Bootstrapp2</h2>
-            <!--?lit$796431132$--><p class="feature-grid-subheadline">
-                  <!--?lit$796431132$-->Everything you need to build fast, modern web apps without the complexity.
+            <!--?lit$887248546$--><span class="feature-grid-eyebrow"><!--?lit$887248546$-->Features</span>
+            <!--?lit$887248546$--><h2 class="feature-grid-headline"><!--?lit$887248546$-->Why Developers Choose asdasd</h2>
+            <!--?lit$887248546$--><p class="feature-grid-subheadline">
+                  <!--?lit$887248546$-->Everything you need to build fast, modern web apps without the complexity.
                 </p>
           </div>
           <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
-            <!--?lit$796431132$--><!---->
+            <!--?lit$887248546$--><!---->
                 <div class="feature-card group">
                   <div class="feature-card-icon-box">
                     <uix-icon class="feature-card-icon uix-icon" name="shield" svg="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;path fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot; d=&quot;M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z&quot;/&gt;&lt;/svg&gt;"><!----><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path></svg></uix-icon>
                   </div>
-                  <h3 class="feature-card-title"><!--?lit$796431132$-->~30KB Runtime</h3>
-                  <p class="feature-card-desc"><!--?lit$796431132$-->Lightweight and tree-shakable. Load only what you use, and keep your bundle sizes tiny.</p>
+                  <h3 class="feature-card-title"><!--?lit$887248546$-->~30KB Runtime</h3>
+                  <p class="feature-card-desc"><!--?lit$887248546$-->Lightweight and tree-shakable. Load only what you use, and keep your bundle sizes tiny.</p>
                 </div>
               <!----><!---->
                 <div class="feature-card group">
                   <div class="feature-card-icon-box">
                     <uix-icon class="feature-card-icon uix-icon" name="trending-up" svg="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;g fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot;&gt;&lt;path d=&quot;m22 7l-8.5 8.5l-5-5L2 17&quot;/&gt;&lt;path d=&quot;M16 7h6v6&quot;/&gt;&lt;/g&gt;&lt;/svg&gt;"><!----><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="m22 7l-8.5 8.5l-5-5L2 17"></path><path d="M16 7h6v6"></path></g></svg></uix-icon>
                   </div>
-                  <h3 class="feature-card-title"><!--?lit$796431132$-->Reactive Model Layer</h3>
-                  <p class="feature-card-desc"><!--?lit$796431132$-->ORM-style data with IndexedDB sync, reactive arrays, and automatic cross-tab updates.</p>
+                  <h3 class="feature-card-title"><!--?lit$887248546$-->Reactive Model Layer</h3>
+                  <p class="feature-card-desc"><!--?lit$887248546$-->ORM-style data with IndexedDB sync, reactive arrays, and automatic cross-tab updates.</p>
                 </div>
               <!----><!---->
                 <div class="feature-card group">
                   <div class="feature-card-icon-box">
                     <uix-icon class="feature-card-icon uix-icon" name="globe" svg="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;g fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot;&gt;&lt;circle cx=&quot;12&quot; cy=&quot;12&quot; r=&quot;10&quot;/&gt;&lt;path d=&quot;M12 2a14.5 14.5 0 0 0 0 20a14.5 14.5 0 0 0 0-20M2 12h20&quot;/&gt;&lt;/g&gt;&lt;/svg&gt;"><!----><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20a14.5 14.5 0 0 0 0-20M2 12h20"></path></g></svg></uix-icon>
                   </div>
-                  <h3 class="feature-card-title"><!--?lit$796431132$-->Service Worker Ready</h3>
-                  <p class="feature-card-desc"><!--?lit$796431132$-->Built-in caching, offline support, and cross-tab messaging. No plugins required.</p>
+                  <h3 class="feature-card-title"><!--?lit$887248546$-->Service Worker Ready</h3>
+                  <p class="feature-card-desc"><!--?lit$887248546$-->Built-in caching, offline support, and cross-tab messaging. No plugins required.</p>
                 </div>
               <!----><!---->
                 <div class="feature-card group">
                   <div class="feature-card-icon-box">
                     <uix-icon class="feature-card-icon uix-icon" name="clock" svg="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;g fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot;&gt;&lt;circle cx=&quot;12&quot; cy=&quot;12&quot; r=&quot;10&quot;/&gt;&lt;path d=&quot;M12 6v6l4 2&quot;/&gt;&lt;/g&gt;&lt;/svg&gt;"><!----><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 6v6l4 2"></path></g></svg></uix-icon>
                   </div>
-                  <h3 class="feature-card-title"><!--?lit$796431132$-->Light DOM Components</h3>
-                  <p class="feature-card-desc"><!--?lit$796431132$-->No shadow DOM penalty. Your global CSS just works, and the browser inspector stays readable.</p>
+                  <h3 class="feature-card-title"><!--?lit$887248546$-->Light DOM Components</h3>
+                  <p class="feature-card-desc"><!--?lit$887248546$-->No shadow DOM penalty. Your global CSS just works, and the browser inspector stays readable.</p>
                 </div>
               <!----><!---->
                 <div class="feature-card group">
                   <div class="feature-card-icon-box">
                     <uix-icon class="feature-card-icon uix-icon" name="target" svg="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;g fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot;&gt;&lt;circle cx=&quot;12&quot; cy=&quot;12&quot; r=&quot;10&quot;/&gt;&lt;circle cx=&quot;12&quot; cy=&quot;12&quot; r=&quot;6&quot;/&gt;&lt;circle cx=&quot;12&quot; cy=&quot;12&quot; r=&quot;2&quot;/&gt;&lt;/g&gt;&lt;/svg&gt;"><!----><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></g></svg></uix-icon>
                   </div>
-                  <h3 class="feature-card-title"><!--?lit$796431132$-->Type System</h3>
-                  <p class="feature-card-desc"><!--?lit$796431132$-->Declarative T.* types with validation, defaults, and first-class relationships between models.</p>
+                  <h3 class="feature-card-title"><!--?lit$887248546$-->Type System</h3>
+                  <p class="feature-card-desc"><!--?lit$887248546$-->Declarative T.* types with validation, defaults, and first-class relationships between models.</p>
                 </div>
               <!----><!---->
                 <div class="feature-card group">
                   <div class="feature-card-icon-box">
                     <uix-icon class="feature-card-icon uix-icon" name="chart-no-axes-column" svg="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;path fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot; d=&quot;M18 20V10m-6 10V4M6 20v-6&quot;/&gt;&lt;/svg&gt;"><!----><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 20V10m-6 10V4M6 20v-6"></path></svg></uix-icon>
                   </div>
-                  <h3 class="feature-card-title"><!--?lit$796431132$-->URLPattern Router</h3>
-                  <p class="feature-card-desc"><!--?lit$796431132$-->Modern client-side routing built on the URLPattern API. Nested routes, params, and history just work.</p>
+                  <h3 class="feature-card-title"><!--?lit$887248546$-->URLPattern Router</h3>
+                  <p class="feature-card-desc"><!--?lit$887248546$-->Modern client-side routing built on the URLPattern API. Nested routes, params, and history just work.</p>
                 </div>
               <!---->
           </div>
         </div>
       </section>
-    </uix-feature-grid><!----><!----><uix-testimonial-section eyebrow="Testimonials" headline="Loved by Developers" subheadline="Join developers shipping fast, lightweight apps with Bootstrapp2." sectionid="testimonials" class="uix-testimonial-section"><!---->
+    </uix-feature-grid><!----><!----><uix-testimonial-section eyebrow="Testimonials" headline="Loved by Developers" subheadline="Join developers shipping fast, lightweight apps with asdasd." sectionid="testimonials" class="uix-testimonial-section"><!---->
       <section class="py-28 px-6" id="testimonials">
         <div class="max-w-6xl mx-auto">
           <div class="text-center mb-16">
-            <!--?lit$796431132$--><span class="testimonial-eyebrow"><!--?lit$796431132$-->Testimonials</span>
-            <!--?lit$796431132$--><h2 class="testimonial-headline"><!--?lit$796431132$-->Loved by Developers</h2>
-            <!--?lit$796431132$--><p class="testimonial-subheadline">
-                  <!--?lit$796431132$-->Join developers shipping fast, lightweight apps with Bootstrapp2.
+            <!--?lit$887248546$--><span class="testimonial-eyebrow"><!--?lit$887248546$-->Testimonials</span>
+            <!--?lit$887248546$--><h2 class="testimonial-headline"><!--?lit$887248546$-->Loved by Developers</h2>
+            <!--?lit$887248546$--><p class="testimonial-subheadline">
+                  <!--?lit$887248546$-->Join developers shipping fast, lightweight apps with asdasd.
                 </p>
           </div>
           <div class="grid md:grid-cols-3 gap-6">
-            <!--?lit$796431132$--><!---->
+            <!--?lit$887248546$--><!---->
                 <div class="testimonial-card">
                   <div class="flex items-center gap-0.5 mb-5">
-                    <!--?lit$796431132$--><!---->
+                    <!--?lit$887248546$--><!---->
                         <uix-icon name="star" class="testimonial-star w-4 h-4 uix-icon" svg="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;path fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot; d=&quot;m12 2l3.09 6.26L22 9.27l-5 4.87l1.18 6.88L12 17.77l-6.18 3.25L7 14.14L2 9.27l6.91-1.01z&quot;/&gt;&lt;/svg&gt;"><!----><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m12 2l3.09 6.26L22 9.27l-5 4.87l1.18 6.88L12 17.77l-6.18 3.25L7 14.14L2 9.27l6.91-1.01z"></path></svg></uix-icon>
                       <!----><!---->
                         <uix-icon name="star" class="testimonial-star w-4 h-4 uix-icon" svg="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;path fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot; d=&quot;m12 2l3.09 6.26L22 9.27l-5 4.87l1.18 6.88L12 17.77l-6.18 3.25L7 14.14L2 9.27l6.91-1.01z&quot;/&gt;&lt;/svg&gt;"><!----><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m12 2l3.09 6.26L22 9.27l-5 4.87l1.18 6.88L12 17.77l-6.18 3.25L7 14.14L2 9.27l6.91-1.01z"></path></svg></uix-icon>
@@ -3329,19 +3322,19 @@
                         <uix-icon name="star" class="testimonial-star w-4 h-4 uix-icon" svg="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;path fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot; d=&quot;m12 2l3.09 6.26L22 9.27l-5 4.87l1.18 6.88L12 17.77l-6.18 3.25L7 14.14L2 9.27l6.91-1.01z&quot;/&gt;&lt;/svg&gt;"><!----><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m12 2l3.09 6.26L22 9.27l-5 4.87l1.18 6.88L12 17.77l-6.18 3.25L7 14.14L2 9.27l6.91-1.01z"></path></svg></uix-icon>
                       <!---->
                   </div>
-                  <p class="testimonial-quote">“<!--?lit$796431132$-->Bootstrapp2 cut our bundle size by 80%. We replaced a 300KB stack with a 30KB framework and our pages load instantly.”</p>
+                  <p class="testimonial-quote">“<!--?lit$887248546$-->asdasd cut our bundle size by 80%. We replaced a 300KB stack with a 30KB framework and our pages load instantly.”</p>
                   <div class="flex items-center gap-3">
                     <img class="testimonial-avatar" src="https://i.pravatar.cc/100?img=5" alt="Sarah Chen">
                     <div>
-                      <p class="testimonial-author"><!--?lit$796431132$-->Sarah Chen</p>
-                      <p class="testimonial-role"><!--?lit$796431132$-->Frontend Lead, Arcade</p>
+                      <p class="testimonial-author"><!--?lit$887248546$-->Sarah Chen</p>
+                      <p class="testimonial-role"><!--?lit$887248546$-->Frontend Lead, Arcade</p>
                     </div>
                   </div>
                 </div>
               <!----><!---->
                 <div class="testimonial-card">
                   <div class="flex items-center gap-0.5 mb-5">
-                    <!--?lit$796431132$--><!---->
+                    <!--?lit$887248546$--><!---->
                         <uix-icon name="star" class="testimonial-star w-4 h-4 uix-icon" svg="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;path fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot; d=&quot;m12 2l3.09 6.26L22 9.27l-5 4.87l1.18 6.88L12 17.77l-6.18 3.25L7 14.14L2 9.27l6.91-1.01z&quot;/&gt;&lt;/svg&gt;"><!----><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m12 2l3.09 6.26L22 9.27l-5 4.87l1.18 6.88L12 17.77l-6.18 3.25L7 14.14L2 9.27l6.91-1.01z"></path></svg></uix-icon>
                       <!----><!---->
                         <uix-icon name="star" class="testimonial-star w-4 h-4 uix-icon" svg="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;path fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot; d=&quot;m12 2l3.09 6.26L22 9.27l-5 4.87l1.18 6.88L12 17.77l-6.18 3.25L7 14.14L2 9.27l6.91-1.01z&quot;/&gt;&lt;/svg&gt;"><!----><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m12 2l3.09 6.26L22 9.27l-5 4.87l1.18 6.88L12 17.77l-6.18 3.25L7 14.14L2 9.27l6.91-1.01z"></path></svg></uix-icon>
@@ -3353,19 +3346,19 @@
                         <uix-icon name="star" class="testimonial-star w-4 h-4 uix-icon" svg="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;path fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot; d=&quot;m12 2l3.09 6.26L22 9.27l-5 4.87l1.18 6.88L12 17.77l-6.18 3.25L7 14.14L2 9.27l6.91-1.01z&quot;/&gt;&lt;/svg&gt;"><!----><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m12 2l3.09 6.26L22 9.27l-5 4.87l1.18 6.88L12 17.77l-6.18 3.25L7 14.14L2 9.27l6.91-1.01z"></path></svg></uix-icon>
                       <!---->
                   </div>
-                  <p class="testimonial-quote">“<!--?lit$796431132$-->The Light DOM approach just works. No shadow DOM quirks, our existing Tailwind styles apply everywhere, and reactivity is fantastic.”</p>
+                  <p class="testimonial-quote">“<!--?lit$887248546$-->The Light DOM approach just works. No shadow DOM quirks, our existing Tailwind styles apply everywhere, and reactivity is fantastic.”</p>
                   <div class="flex items-center gap-3">
                     <img class="testimonial-avatar" src="https://i.pravatar.cc/100?img=12" alt="Marcus Rivera">
                     <div>
-                      <p class="testimonial-author"><!--?lit$796431132$-->Marcus Rivera</p>
-                      <p class="testimonial-role"><!--?lit$796431132$-->Staff Engineer, Orbit Labs</p>
+                      <p class="testimonial-author"><!--?lit$887248546$-->Marcus Rivera</p>
+                      <p class="testimonial-role"><!--?lit$887248546$-->Staff Engineer, Orbit Labs</p>
                     </div>
                   </div>
                 </div>
               <!----><!---->
                 <div class="testimonial-card">
                   <div class="flex items-center gap-0.5 mb-5">
-                    <!--?lit$796431132$--><!---->
+                    <!--?lit$887248546$--><!---->
                         <uix-icon name="star" class="testimonial-star w-4 h-4 uix-icon" svg="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;path fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot; d=&quot;m12 2l3.09 6.26L22 9.27l-5 4.87l1.18 6.88L12 17.77l-6.18 3.25L7 14.14L2 9.27l6.91-1.01z&quot;/&gt;&lt;/svg&gt;"><!----><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m12 2l3.09 6.26L22 9.27l-5 4.87l1.18 6.88L12 17.77l-6.18 3.25L7 14.14L2 9.27l6.91-1.01z"></path></svg></uix-icon>
                       <!----><!---->
                         <uix-icon name="star" class="testimonial-star w-4 h-4 uix-icon" svg="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;path fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot; d=&quot;m12 2l3.09 6.26L22 9.27l-5 4.87l1.18 6.88L12 17.77l-6.18 3.25L7 14.14L2 9.27l6.91-1.01z&quot;/&gt;&lt;/svg&gt;"><!----><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m12 2l3.09 6.26L22 9.27l-5 4.87l1.18 6.88L12 17.77l-6.18 3.25L7 14.14L2 9.27l6.91-1.01z"></path></svg></uix-icon>
@@ -3377,12 +3370,12 @@
                         <uix-icon name="star" class="testimonial-star w-4 h-4 uix-icon" svg="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;path fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot; d=&quot;m12 2l3.09 6.26L22 9.27l-5 4.87l1.18 6.88L12 17.77l-6.18 3.25L7 14.14L2 9.27l6.91-1.01z&quot;/&gt;&lt;/svg&gt;"><!----><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m12 2l3.09 6.26L22 9.27l-5 4.87l1.18 6.88L12 17.77l-6.18 3.25L7 14.14L2 9.27l6.91-1.01z"></path></svg></uix-icon>
                       <!---->
                   </div>
-                  <p class="testimonial-quote">“<!--?lit$796431132$-->Went from prototype to production in two weekends. The built-in Service Worker gave us offline support without writing a line of extra code.”</p>
+                  <p class="testimonial-quote">“<!--?lit$887248546$-->Went from prototype to production in two weekends. The built-in Service Worker gave us offline support without writing a line of extra code.”</p>
                   <div class="flex items-center gap-3">
                     <img class="testimonial-avatar" src="https://i.pravatar.cc/100?img=9" alt="Emma Larsson">
                     <div>
-                      <p class="testimonial-author"><!--?lit$796431132$-->Emma Larsson</p>
-                      <p class="testimonial-role"><!--?lit$796431132$-->Indie Developer</p>
+                      <p class="testimonial-author"><!--?lit$887248546$-->Emma Larsson</p>
+                      <p class="testimonial-role"><!--?lit$887248546$-->Indie Developer</p>
                     </div>
                   </div>
                 </div>
@@ -3394,83 +3387,83 @@
       <section class="py-28 px-6" id="faq">
         <div class="max-w-3xl mx-auto">
           <div class="text-center mb-16">
-            <!--?lit$796431132$--><span class="faq-eyebrow"><!--?lit$796431132$-->FAQ</span>
-            <!--?lit$796431132$--><h2 class="faq-headline"><!--?lit$796431132$-->Frequently Asked Questions</h2>
-            <!--?lit$796431132$-->
+            <!--?lit$887248546$--><span class="faq-eyebrow"><!--?lit$887248546$-->FAQ</span>
+            <!--?lit$887248546$--><h2 class="faq-headline"><!--?lit$887248546$-->Frequently Asked Questions</h2>
+            <!--?lit$887248546$-->
           </div>
           <div class="flex flex-col gap-3">
-            <!--?lit$796431132$--><!---->
+            <!--?lit$887248546$--><!---->
                 <div class="faq-item">
                   <button class="faq-toggle">
-                    <span class="faq-question"><!--?lit$796431132$-->What is Bootstrapp2?</span>
+                    <span class="faq-question"><!--?lit$887248546$-->What is asdasd?</span>
                     <uix-icon name="chevron-down" class="faq-chevron w-5 h-5 uix-icon" svg="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;path fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot; d=&quot;m6 9l6 6l6-6&quot;/&gt;&lt;/svg&gt;"><!----><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6 9l6 6l6-6"></path></svg></uix-icon>
                   </button>
                   <div class="faq-answer-wrap max-h-0">
-                    <p class="faq-answer"><!--?lit$796431132$-->Bootstrapp2 is a ~30KB frontend framework with light DOM web components, lit-html templating, a reactive model layer, and a built-in Service Worker for caching and cross-tab sync.</p>
+                    <p class="faq-answer"><!--?lit$887248546$-->asdasd is a ~30KB frontend framework with light DOM web components, lit-html templating, a reactive model layer, and a built-in Service Worker for caching and cross-tab sync.</p>
                   </div>
                 </div>
               <!----><!---->
                 <div class="faq-item">
                   <button class="faq-toggle">
-                    <span class="faq-question"><!--?lit$796431132$-->Is Bootstrapp2 open source?</span>
+                    <span class="faq-question"><!--?lit$887248546$-->Is asdasd open source?</span>
                     <uix-icon name="chevron-down" class="faq-chevron w-5 h-5 uix-icon" svg="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;path fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot; d=&quot;m6 9l6 6l6-6&quot;/&gt;&lt;/svg&gt;"><!----><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6 9l6 6l6-6"></path></svg></uix-icon>
                   </button>
                   <div class="faq-answer-wrap max-h-0">
-                    <p class="faq-answer"><!--?lit$796431132$-->Yes. Bootstrapp2 is AGPL-3.0 licensed and developed in the open on GitHub. You can read the source, file issues, and contribute.</p>
+                    <p class="faq-answer"><!--?lit$887248546$-->Yes. asdasd is AGPL-3.0 licensed and developed in the open on GitHub. You can read the source, file issues, and contribute.</p>
                   </div>
                 </div>
               <!----><!---->
                 <div class="faq-item">
                   <button class="faq-toggle">
-                    <span class="faq-question"><!--?lit$796431132$-->What are the browser requirements?</span>
+                    <span class="faq-question"><!--?lit$887248546$-->What are the browser requirements?</span>
                     <uix-icon name="chevron-down" class="faq-chevron w-5 h-5 uix-icon" svg="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;path fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot; d=&quot;m6 9l6 6l6-6&quot;/&gt;&lt;/svg&gt;"><!----><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6 9l6 6l6-6"></path></svg></uix-icon>
                   </button>
                   <div class="faq-answer-wrap max-h-0">
-                    <p class="faq-answer"><!--?lit$796431132$-->Modern evergreen browsers that support native ES modules, IndexedDB, and Service Workers. Chrome, Firefox, Safari, and Edge are all fully supported.</p>
+                    <p class="faq-answer"><!--?lit$887248546$-->Modern evergreen browsers that support native ES modules, IndexedDB, and Service Workers. Chrome, Firefox, Safari, and Edge are all fully supported.</p>
                   </div>
                 </div>
               <!----><!---->
                 <div class="faq-item">
                   <button class="faq-toggle">
-                    <span class="faq-question"><!--?lit$796431132$-->How does it compare to React or Vue?</span>
+                    <span class="faq-question"><!--?lit$887248546$-->How does it compare to React or Vue?</span>
                     <uix-icon name="chevron-down" class="faq-chevron w-5 h-5 uix-icon" svg="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;path fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot; d=&quot;m6 9l6 6l6-6&quot;/&gt;&lt;/svg&gt;"><!----><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6 9l6 6l6-6"></path></svg></uix-icon>
                   </button>
                   <div class="faq-answer-wrap max-h-0">
-                    <p class="faq-answer"><!--?lit$796431132$-->Bootstrapp2 is a native-web alternative. It uses standards like Custom Elements, URLPattern, and ES modules directly — no JSX, no virtual DOM, no build step required.</p>
+                    <p class="faq-answer"><!--?lit$887248546$-->asdasd is a native-web alternative. It uses standards like Custom Elements, URLPattern, and ES modules directly — no JSX, no virtual DOM, no build step required.</p>
                   </div>
                 </div>
               <!----><!---->
                 <div class="faq-item">
                   <button class="faq-toggle">
-                    <span class="faq-question"><!--?lit$796431132$-->Can I use Bootstrapp2 in production?</span>
+                    <span class="faq-question"><!--?lit$887248546$-->Can I use asdasd in production?</span>
                     <uix-icon name="chevron-down" class="faq-chevron w-5 h-5 uix-icon" svg="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;path fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot; d=&quot;m6 9l6 6l6-6&quot;/&gt;&lt;/svg&gt;"><!----><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6 9l6 6l6-6"></path></svg></uix-icon>
                   </button>
                   <div class="faq-answer-wrap max-h-0">
-                    <p class="faq-answer"><!--?lit$796431132$-->Absolutely. Bootstrapp2 ships production builds with minification, bundling, and offline caching. The dev server and build pipeline are designed for real-world deployment.</p>
+                    <p class="faq-answer"><!--?lit$887248546$-->Absolutely. asdasd ships production builds with minification, bundling, and offline caching. The dev server and build pipeline are designed for real-world deployment.</p>
                   </div>
                 </div>
               <!---->
           </div>
         </div>
       </section>
-    </uix-faq-section><!----><!----><uix-cta-section variant="dark" headline="Ready to Ship?" subheadline="Join developers building fast, lightweight web apps with Bootstrapp2." class="uix-cta-section"><!---->
+    </uix-faq-section><!----><!----><uix-cta-section variant="dark" headline="Ready to Ship?" subheadline="Join developers building fast, lightweight web apps with asdasd." class="uix-cta-section"><!---->
       <section class="cta-section cta-section-dark">
         <div class="max-w-4xl mx-auto text-center">
-          <!--?lit$796431132$--><h2 class="cta-headline"><!--?lit$796431132$-->Ready to Ship?</h2>
-          <!--?lit$796431132$--><p class="cta-subheadline"><!--?lit$796431132$-->Join developers building fast, lightweight web apps with Bootstrapp2.</p>
+          <!--?lit$887248546$--><h2 class="cta-headline"><!--?lit$887248546$-->Ready to Ship?</h2>
+          <!--?lit$887248546$--><p class="cta-subheadline"><!--?lit$887248546$-->Join developers building fast, lightweight web apps with asdasd.</p>
           <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <!--?lit$796431132$--><!----><a class="cta-btn cta-btn-primary w-full sm:w-auto" href="#"><!--?lit$796431132$-->Get Started</a><!----><!----><a class="cta-btn cta-btn-secondary w-full sm:w-auto" href="#"><!--?lit$796431132$-->Read the Docs</a><!---->
+            <!--?lit$887248546$--><!----><a class="cta-btn cta-btn-primary w-full sm:w-auto" href="#"><!--?lit$887248546$-->Get Started</a><!----><!----><a class="cta-btn cta-btn-secondary w-full sm:w-auto" href="#"><!--?lit$887248546$-->Read the Docs</a><!---->
           </div>
         </div>
       </section>
     </uix-cta-section><!---->
-      <!--?lit$796431132$--><uix-footer tagline="The lightweight frontend framework built for speed." copyright="© 2026 Bootstrapp2. All rights reserved." class="uix-footer"><!---->
+      <!--?lit$887248546$--><uix-footer tagline="The lightweight frontend framework built for speed." copyright="© 2026 asdasd. All rights reserved." class="uix-footer"><!---->
       <footer class="footer-root">
         <div class="footer-divider max-w-6xl mx-auto pt-12">
           <div class="grid md:grid-cols-4 gap-10 mb-12">
             <div>
               <div class="footer-brand flex items-center gap-2.5 mb-4">
-                <!--?lit$796431132$-->
+                <!--?lit$887248546$-->
   <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
     <circle cx="12" cy="12" r="10" fill="url(#paint_logo)"></circle>
     <path d="M12 5V19M5 12H19M8 8L16 16M8 16L16 8" stroke="white" stroke-width="2" stroke-linecap="round"></path>
@@ -3483,76 +3476,76 @@
     </defs>
   </svg>
 
-                <!--?lit$796431132$-->Bootstrapp2
+                <!--?lit$887248546$-->asdasd
               </div>
-              <!--?lit$796431132$--><p class="footer-tagline"><!--?lit$796431132$-->The lightweight frontend framework built for speed.</p>
-              <!--?lit$796431132$-->
+              <!--?lit$887248546$--><p class="footer-tagline"><!--?lit$887248546$-->The lightweight frontend framework built for speed.</p>
+              <!--?lit$887248546$-->
             </div>
-            <!--?lit$796431132$--><!---->
+            <!--?lit$887248546$--><!---->
                 <div>
-                  <h4 class="footer-col-title"><!--?lit$796431132$-->Product</h4>
+                  <h4 class="footer-col-title"><!--?lit$887248546$-->Product</h4>
                   <ul class="flex flex-col gap-2.5">
-                    <!--?lit$796431132$--><!---->
+                    <!--?lit$887248546$--><!---->
                         <li>
-                          <a class="footer-link" href="#"><!--?lit$796431132$-->Features</a>
+                          <a class="footer-link" href="#"><!--?lit$887248546$-->Features</a>
                         </li>
                       <!----><!---->
                         <li>
-                          <a class="footer-link" href="#"><!--?lit$796431132$-->Pricing</a>
+                          <a class="footer-link" href="#"><!--?lit$887248546$-->Pricing</a>
                         </li>
                       <!----><!---->
                         <li>
-                          <a class="footer-link" href="#"><!--?lit$796431132$-->Integrations</a>
+                          <a class="footer-link" href="#"><!--?lit$887248546$-->Integrations</a>
                         </li>
                       <!----><!---->
                         <li>
-                          <a class="footer-link" href="#"><!--?lit$796431132$-->Changelog</a>
+                          <a class="footer-link" href="#"><!--?lit$887248546$-->Changelog</a>
                         </li>
                       <!---->
                   </ul>
                 </div>
               <!----><!---->
                 <div>
-                  <h4 class="footer-col-title"><!--?lit$796431132$-->Resources</h4>
+                  <h4 class="footer-col-title"><!--?lit$887248546$-->Resources</h4>
                   <ul class="flex flex-col gap-2.5">
-                    <!--?lit$796431132$--><!---->
+                    <!--?lit$887248546$--><!---->
                         <li>
-                          <a class="footer-link" href="#"><!--?lit$796431132$-->Blog</a>
+                          <a class="footer-link" href="#"><!--?lit$887248546$-->Blog</a>
                         </li>
                       <!----><!---->
                         <li>
-                          <a class="footer-link" href="#"><!--?lit$796431132$-->Case Studies</a>
+                          <a class="footer-link" href="#"><!--?lit$887248546$-->Case Studies</a>
                         </li>
                       <!----><!---->
                         <li>
-                          <a class="footer-link" href="#"><!--?lit$796431132$-->Documentation</a>
+                          <a class="footer-link" href="#"><!--?lit$887248546$-->Documentation</a>
                         </li>
                       <!----><!---->
                         <li>
-                          <a class="footer-link" href="#"><!--?lit$796431132$-->Support</a>
+                          <a class="footer-link" href="#"><!--?lit$887248546$-->Support</a>
                         </li>
                       <!---->
                   </ul>
                 </div>
               <!----><!---->
                 <div>
-                  <h4 class="footer-col-title"><!--?lit$796431132$-->Company</h4>
+                  <h4 class="footer-col-title"><!--?lit$887248546$-->Company</h4>
                   <ul class="flex flex-col gap-2.5">
-                    <!--?lit$796431132$--><!---->
+                    <!--?lit$887248546$--><!---->
                         <li>
-                          <a class="footer-link" href="#"><!--?lit$796431132$-->About</a>
+                          <a class="footer-link" href="#"><!--?lit$887248546$-->About</a>
                         </li>
                       <!----><!---->
                         <li>
-                          <a class="footer-link" href="#"><!--?lit$796431132$-->Careers</a>
+                          <a class="footer-link" href="#"><!--?lit$887248546$-->Careers</a>
                         </li>
                       <!----><!---->
                         <li>
-                          <a class="footer-link" href="#"><!--?lit$796431132$-->Contact</a>
+                          <a class="footer-link" href="#"><!--?lit$887248546$-->Contact</a>
                         </li>
                       <!----><!---->
                         <li>
-                          <a class="footer-link" href="#"><!--?lit$796431132$-->Legal</a>
+                          <a class="footer-link" href="#"><!--?lit$887248546$-->Legal</a>
                         </li>
                       <!---->
                   </ul>
@@ -3560,9 +3553,16 @@
               <!---->
           </div>
           <div class="footer-copyright footer-divider pt-8 text-center">
-            <!--?lit$796431132$-->© 2026 Bootstrapp2. All rights reserved.
+            <!--?lit$887248546$-->© 2026 asdasd. All rights reserved.
           </div>
         </div>
       </footer>
     </uix-footer>
-    </uix-page></body></html>
+    </uix-page></bsp-website-page></app-container>
+  <script>
+    window.__BOOTSTRAPP_MANIFEST__ = {"importmaps":{"base":{"html-to-image":"https://esm.sh/html-to-image","bootstrapp":"/node_modules/@bootstrapp/base/app.js","lit-html":"https://esm.sh/lit-html","lit-html/":"https://esm.sh/lit-html/","@bootstrapp/view":"/node_modules/@bootstrapp/view/index.js","@bootstrapp/view/loader":"/node_modules/@bootstrapp/view/loader.js","@bootstrapp/view/discovery":"/node_modules/@bootstrapp/view/discovery.js","@bootstrapp/events":"/node_modules/@bootstrapp/events/index.js","@unocss/core":"https://esm.sh/@unocss/core","@unocss/preset-uno":"https://esm.sh/@unocss/preset-uno","@unocss/preset-wind":"https://esm.sh/@unocss/preset-wind","@bootstrapp/controller":"/node_modules/@bootstrapp/controller/index.js","@bootstrapp/controller/signal":"/node_modules/@bootstrapp/controller/signal.js","@bootstrapp/controller/store":"/node_modules/@bootstrapp/controller/store.js","@bootstrapp/controller/sync":"/node_modules/@bootstrapp/controller/sync.js","@bootstrapp/controller/view":"/node_modules/@bootstrapp/controller/view.js","@bootstrapp/controller/app":"/node_modules/@bootstrapp/controller/app.js","@bootstrapp/controller/adapters/storage":"/node_modules/@bootstrapp/controller/adapters/storage.js","@bootstrapp/controller/adapters/url":"/node_modules/@bootstrapp/controller/adapters/url.js","pocketbase":"https://esm.sh/pocketbase","@bootstrapp/model":"/node_modules/@bootstrapp/model/index.js","@bootstrapp/model/frontend":"/node_modules/@bootstrapp/model/frontend.js","@bootstrapp/model/backend":"/node_modules/@bootstrapp/model/backend.js","@bootstrapp/model/subscription-manager":"/node_modules/@bootstrapp/model/subscription-manager.js","@bootstrapp/model/query-builder":"/node_modules/@bootstrapp/model/query-builder.js","@bootstrapp/model/row-utils":"/node_modules/@bootstrapp/model/row-utils.js","@bootstrapp/model/factory":"/node_modules/@bootstrapp/model/factory.js","@bootstrapp/model/adapter-base":"/node_modules/@bootstrapp/model/adapter-base.js","@bootstrapp/model/slug":"/node_modules/@bootstrapp/model/slug.js","@bootstrapp/model/schema-loader":"/node_modules/@bootstrapp/model/schema-loader.js","@bootstrapp/model-indexeddb":"/node_modules/@bootstrapp/model-indexeddb/index.js","@bootstrapp/model-indexeddb/adapter":"/node_modules/@bootstrapp/model-indexeddb/adapter.js","@bootstrapp/model-indexeddb/system-model-manager":"/node_modules/@bootstrapp/model-indexeddb/system-model-manager.js","@bootstrapp/router":"/node_modules/@bootstrapp/router/index.js","@bootstrapp/router/core":"/node_modules/@bootstrapp/router/core.js","@bootstrapp/router/app":"/node_modules/@bootstrapp/router/app.js","@bootstrapp/router/matcher":"/node_modules/@bootstrapp/router/matcher.js","@bootstrapp/router/i18n":"/node_modules/@bootstrapp/router/i18n.js","@bootstrapp/router/adapters/browser":"/node_modules/@bootstrapp/router/adapters/browser.js","@bootstrapp/router/adapters/memory":"/node_modules/@bootstrapp/router/adapters/memory.js","@bootstrapp/router/plugins/signal":"/node_modules/@bootstrapp/router/plugins/signal.js","@bootstrapp/types":"/node_modules/@bootstrapp/types/index.js","node_modules/@bootstrapp":"/node_modules/@bootstrapp/base/app.js","fflate":"https://cdn.jsdelivr.net/npm/fflate@0.8.2/+esm"},"admin":{"html-to-image":"https://esm.sh/html-to-image","bootstrapp":"/node_modules/@bootstrapp/base/app.js","lit-html":"https://esm.sh/lit-html","lit-html/":"https://esm.sh/lit-html/","@bootstrapp/view":"/node_modules/@bootstrapp/view/index.js","@bootstrapp/view/loader":"/node_modules/@bootstrapp/view/loader.js","@bootstrapp/view/discovery":"/node_modules/@bootstrapp/view/discovery.js","@bootstrapp/events":"/node_modules/@bootstrapp/events/index.js","@unocss/core":"https://esm.sh/@unocss/core","@unocss/preset-uno":"https://esm.sh/@unocss/preset-uno","@unocss/preset-wind":"https://esm.sh/@unocss/preset-wind","@bootstrapp/controller":"/node_modules/@bootstrapp/controller/index.js","@bootstrapp/controller/signal":"/node_modules/@bootstrapp/controller/signal.js","@bootstrapp/controller/store":"/node_modules/@bootstrapp/controller/store.js","@bootstrapp/controller/sync":"/node_modules/@bootstrapp/controller/sync.js","@bootstrapp/controller/view":"/node_modules/@bootstrapp/controller/view.js","@bootstrapp/controller/app":"/node_modules/@bootstrapp/controller/app.js","@bootstrapp/controller/adapters/storage":"/node_modules/@bootstrapp/controller/adapters/storage.js","@bootstrapp/controller/adapters/url":"/node_modules/@bootstrapp/controller/adapters/url.js","pocketbase":"https://esm.sh/pocketbase","@bootstrapp/model":"/node_modules/@bootstrapp/model/index.js","@bootstrapp/model/frontend":"/node_modules/@bootstrapp/model/frontend.js","@bootstrapp/model/backend":"/node_modules/@bootstrapp/model/backend.js","@bootstrapp/model/subscription-manager":"/node_modules/@bootstrapp/model/subscription-manager.js","@bootstrapp/model/query-builder":"/node_modules/@bootstrapp/model/query-builder.js","@bootstrapp/model/row-utils":"/node_modules/@bootstrapp/model/row-utils.js","@bootstrapp/model/factory":"/node_modules/@bootstrapp/model/factory.js","@bootstrapp/model/adapter-base":"/node_modules/@bootstrapp/model/adapter-base.js","@bootstrapp/model/slug":"/node_modules/@bootstrapp/model/slug.js","@bootstrapp/model/schema-loader":"/node_modules/@bootstrapp/model/schema-loader.js","@bootstrapp/model-indexeddb":"/node_modules/@bootstrapp/model-indexeddb/index.js","@bootstrapp/model-indexeddb/adapter":"/node_modules/@bootstrapp/model-indexeddb/adapter.js","@bootstrapp/model-indexeddb/system-model-manager":"/node_modules/@bootstrapp/model-indexeddb/system-model-manager.js","@bootstrapp/router":"/node_modules/@bootstrapp/router/index.js","@bootstrapp/router/core":"/node_modules/@bootstrapp/router/core.js","@bootstrapp/router/app":"/node_modules/@bootstrapp/router/app.js","@bootstrapp/router/matcher":"/node_modules/@bootstrapp/router/matcher.js","@bootstrapp/router/i18n":"/node_modules/@bootstrapp/router/i18n.js","@bootstrapp/router/adapters/browser":"/node_modules/@bootstrapp/router/adapters/browser.js","@bootstrapp/router/adapters/memory":"/node_modules/@bootstrapp/router/adapters/memory.js","@bootstrapp/router/plugins/signal":"/node_modules/@bootstrapp/router/plugins/signal.js","@bootstrapp/types":"/node_modules/@bootstrapp/types/index.js","node_modules/@bootstrapp":"/node_modules/@bootstrapp/base/app.js","fflate":"https://cdn.jsdelivr.net/npm/fflate@0.8.2/+esm"}},"packages":{"agent":{"components":{"agent":"views/"},"hasSchema":true},"base":{"components":{"app":"app/"}},"github":{"components":{"github":"views/"}},"ide":{"components":{"ide":"views/"},"hasSchema":true,"namespace":false},"router":{"components":{"router":"./"}},"sw":{"components":{"sw":"views/"}},"uix":{"components":{"uix":{"accordion":"navigation/accordion","breadcrumbs":"navigation/breadcrumbs","menu":"navigation/menu","navbar":"navigation/navbar","nav-item":"navigation/nav-item","pagination":"navigation/pagination","sidebar":"navigation/sidebar","tabs":"navigation/tabs","tree":"navigation/tree","tree-item":"navigation/tree-item","wizard":"navigation/wizard","alert-dialog":"overlay/alert-dialog","bottom-sheet":"overlay/bottom-sheet","drawer":"overlay/drawer","dropdown":"overlay/dropdown","modal":"overlay/modal","overlay":"overlay/overlay","popover":"overlay/popover","tooltip":"overlay/tooltip","popover-controller":"overlay/popover-controller","avatar":"display/avatar","badge":"display/badge","button":"display/button","calendar":"display/calendar","circle":"display/circle","editable":"display/editable","heading":"display/heading","icon":"display/icon","icon-picker":"form/icon-picker","image":"display/image","link":"display/link","list":"display/list","list-item":"display/list-item","markdown":"display/markdown","media":"display/media","pattern":"display/pattern","stat":"display/stat","table":"display/table","data-table":"display/data-table","tag":"display/tag","text":"display/text","bar-chart":"display/bar-chart","line-chart":"display/line-chart","sparkline":"display/sparkline","pie-chart":"display/pie-chart","card":"layout/card","container":"layout/container","divider":"layout/divider","flex":"layout/flex","grid":"layout/grid","panel":"layout/panel","section":"layout/section","split-pane":"layout/split-pane","app-container":"app/app-container","app-shell":"app/app-shell","app-header":"app/app-header","bottom-nav":"app/bottom-nav","title-bar":"app/title-bar","progress-bar":"feedback/progress-bar","skeleton":"feedback/skeleton","spinner":"feedback/spinner","toast":"feedback/toast","alert":"feedback/alert","device":"utility/device","clipboard":"utility/clipboard","darkmode":"utility/darkmode","draggable":"utility/draggable","droparea":"utility/droparea","indexeddb-explorer":"utility/indexeddb-explorer","seo":"utility/seo","theme-toggle":"utility/theme-toggle","auth-form":"form/auth-form","checkbox":"form/checkbox","code":"form/code","file-upload":"form/file-upload","form":"form/form","form-control":"form/form-control","label":"form/label","input":"form/input","join":"form/join","number-input":"form/number-input","radio":"form/radio","radio-group":"form/radio-group","rating":"form/rating","select":"form/select","slider":"form/slider","switch":"form/switch","textarea":"form/textarea","time":"form/time","showcase":"docs/showcase","showcase-preview":"docs/showcase-preview","showcase-code-viewer":"docs/showcase-code-viewer","showcase-property-editor":"docs/showcase-property-editor","theme-generator":"docs/theme-generator","theme-editor":"theme/editor","ide-sidebar":"views/ide-sidebar","page":"layout/page","float-card":"page/float-card","site-header":"page/site-header","hero-section":"page/hero-section","feature-grid":"page/feature-grid","testimonial-section":"page/testimonial-section","faq-section":"page/faq-section","cta-section":"page/cta-section","footer":"page/footer","steps-section":"page/steps-section","about-section":"page/about-section","showcase-section":"page/showcase-section","pricing-card":"page/pricing-card","pricing-table":"page/pricing-table","stats-section":"page/stats-section"}}},"admin":{"components":{"admin":"views/"}},"cms":{"components":{"cms":"views/"},"hasSchema":true},"devops":{"components":{"devops":"views/"},"hasSchema":true},"theme":{"components":{"theme":"views/"}}},"components":{"bsp":{"home":"views/home.js","home-sidebar":"views/home-sidebar.js","recent":"views/recent.js","raw-view":"views/raw-view.js"}},"database":{"adapter":"indexeddb","adapters":{"indexeddb":{"name":"bootstrapp","version":1}}},"basePath":"","theme":{"path":"/theme.js","admin":"gruvbox-dark","font":{"family":"system-ui, 'Manrope', 'Inter'","google":["Manrope"]},"icon":{"family":"lucide"},"runtime":true},"dev":true,"frontendEntry":"/extensions/pages/runtime/website-frontend.js","websiteSlug":"asdasd"};
+  </script>
+  <script type="module" src="/dev.js?v=1777573932821"></script>
+  <script type="module" src="/node_modules/@bootstrapp/base/app-entry.js"></script>
+
+</body></html>
