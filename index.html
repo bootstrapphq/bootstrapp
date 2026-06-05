@@ -140,82 +140,10 @@
 }</style><head>
 <meta charset="utf-8">
 <title>Bootstrapp</title>
-<base href="/_website/bootstrapp/">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text y=%22.9em%22 font-size=%2290%22&gt;columns-3&lt;/text&gt;&lt;/svg&gt;">
-<script type="importmap">{
-  "imports": {
-    "diff": "https://esm.sh/diff@5.2.0",
-    "@bootstrapp/agent": "/app/agent/index.js",
-    "@bootstrapp/agent/": "/app/agent/",
-    "@bootstrapp/ai": "/app/ai/index.js",
-    "@bootstrapp/ai/": "/app/ai/",
-    "@bootstrapp/app": "/app/app/frontend.js",
-    "@bootstrapp/app/": "/app/app/",
-    "@bootstrapp/base": "/app/base/app.js",
-    "@bootstrapp/base/": "/app/base/",
-    "@bootstrapp/controller": "/app/controller/index.js",
-    "@bootstrapp/controller/": "/app/controller/",
-    "@bootstrapp/electron": "/app/electron/index.js",
-    "@bootstrapp/electron/": "/app/electron/",
-    "@bootstrapp/events": "/app/events/index.js",
-    "@bootstrapp/events/": "/app/events/",
-    "@bootstrapp/github": "/app/github/index.js",
-    "@bootstrapp/github/": "/app/github/",
-    "@bootstrapp/icon-lucide": "/app/icon-lucide/index.js",
-    "@bootstrapp/icon-lucide/": "/app/icon-lucide/",
-    "@bootstrapp/ide": "/app/ide/index.js",
-    "@bootstrapp/ide/": "/app/ide/",
-    "@bootstrapp/model": "/app/model/index.js",
-    "@bootstrapp/model/": "/app/model/",
-    "@bootstrapp/model-file": "/app/model-file/index.js",
-    "@bootstrapp/model-file/": "/app/model-file/",
-    "@bootstrapp/model-indexeddb": "/app/model-indexeddb/index.js",
-    "@bootstrapp/model-indexeddb/": "/app/model-indexeddb/",
-    "@bootstrapp/router": "/app/router/index.js",
-    "@bootstrapp/router/": "/app/router/",
-    "@bootstrapp/rpc": "/app/rpc/index.js",
-    "@bootstrapp/rpc/": "/app/rpc/",
-    "@bootstrapp/storage": "/app/storage/index.js",
-    "@bootstrapp/storage/": "/app/storage/",
-    "@bootstrapp/sw": "/app/sw/frontend.js",
-    "@bootstrapp/sw/": "/app/sw/",
-    "@bootstrapp/types": "/app/types/index.js",
-    "@bootstrapp/types/": "/app/types/",
-    "@bootstrapp/uix": "/app/uix/index.js",
-    "@bootstrapp/uix/": "/app/uix/",
-    "@bootstrapp/view": "/app/view/index.js",
-    "@bootstrapp/view/": "/app/view/",
-    "qrcode": "https://esm.sh/qrcode@1.5.4",
-    "@bootstrapp/p2p": "/app/p2p/index.js",
-    "@bootstrapp/p2p/": "/app/p2p/",
-    "@bootstrapp/admin": "/app/admin/index.js",
-    "@bootstrapp/admin/": "/app/admin/",
-    "@bootstrapp/cli": "/app/cli/types/index.ts",
-    "@bootstrapp/cli/": "/app/cli/",
-    "@bootstrapp/cloudflare": "/app/cloudflare/index.js",
-    "@bootstrapp/cloudflare/": "/app/cloudflare/",
-    "@unocss/core": "https://esm.sh/@unocss/core@66.6.6",
-    "@unocss/preset-uno": "https://esm.sh/@unocss/preset-uno@66.6.6",
-    "@unocss/preset-wind": "https://esm.sh/@unocss/preset-wind@66.6.6",
-    "esbuild-wasm": "https://esm.sh/esbuild-wasm@0.24.0",
-    "fflate": "https://esm.sh/fflate@0.8.2",
-    "javascript-obfuscator": "https://esm.sh/javascript-obfuscator@4.1.1",
-    "@bootstrapp/devops": "/app/devops/index.js",
-    "@bootstrapp/devops/": "/app/devops/",
-    "@bootstrapp/serve": "/app/serve/src/server.ts",
-    "@bootstrapp/serve/": "/app/serve/",
-    "@bootstrapp/tailwind": "/app/tailwind/index.js",
-    "@bootstrapp/tailwind/": "/app/tailwind/",
-    "@bootstrapp/theme": "/app/theme/index.js",
-    "@bootstrapp/theme/": "/app/theme/",
-    "marked": "/app/uix/display/marked-vendor.js",
-    "codemirror": "/app/uix/form/codemirror.js",
-    "lit-html": "/app/view/lit.js",
-    "trystero": "/app/p2p/vendor-trystero.js",
-    "tailwind-unocss": "/app/tailwind/unocss.js"
-  }
-}</script>
+
 <style>*{margin:0;padding:0;box-sizing:border-box}html,body{width:100%;min-height:100vh;background:#0f0f0f}</style>
 <style id="compstyles">
 :where(.uix-page, uix-page) {
@@ -631,196 +559,6 @@
 }
 
 
-:where(.uix-faq-section, uix-faq-section) {
-  display: block;
-
-  .faq-eyebrow {
-    display: inline-block;
-    background: var(--color-surface-inverse);
-    color: var(--color-surface);
-    font-size: var(--text-eyebrow);
-    font-weight: var(--font-bold);
-    padding: 6px var(--spacing-lg);
-    border-radius: var(--radius-full);
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    margin-bottom: var(--spacing-xl);
-  }
-
-  .faq-headline {
-    font-size: var(--text-section);
-    font-weight: var(--font-black);
-    letter-spacing: -0.03em;
-    color: var(--color-text-primary);
-    margin-bottom: var(--spacing-lg);
-  }
-
-  .faq-subheadline {
-    font-size: var(--text-subhead);
-    font-weight: var(--font-medium);
-    color: var(--color-text-secondary);
-    max-width: 500px;
-    margin: 0 auto;
-  }
-
-  .faq-item {
-    background: var(--color-surface);
-    border-radius: var(--radius-card);
-    border: 1px solid
-      color-mix(in srgb, var(--color-text-primary) 8%, transparent);
-    box-shadow: var(--shadow-card);
-    overflow: hidden;
-    transition: all 0.3s ease;
-  }
-
-  .faq-toggle {
-    width: 100%;
-    text-align: left;
-    padding: var(--spacing-xl) 28px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: var(--spacing-lg);
-    background: transparent;
-    border: none;
-    cursor: pointer;
-  }
-
-  .faq-question {
-    font-size: var(--text-body);
-    font-weight: var(--font-bold);
-    color: var(--color-text-primary);
-  }
-
-  .faq-chevron {
-    color: var(--color-text-muted);
-    flex-shrink: 0;
-    transition: transform 0.3s ease;
-  }
-
-  .faq-answer-wrap {
-    overflow: hidden;
-    transition: all 0.3s ease;
-  }
-
-  .faq-answer {
-    padding: 0 28px;
-    font-size: 14px;
-    font-weight: var(--font-medium);
-    color: var(--color-text-secondary);
-    line-height: 1.6;
-  }
-}
-
-
-:where(.uix-cta-section, uix-cta-section) {
-  display: block;
-
-  .cta-section {
-    padding: var(--spacing-4xl) var(--spacing-xl);
-  }
-
-  .cta-section-dark {
-    background: var(--color-surface-inverse);
-    color: var(--color-surface);
-  }
-
-  .cta-section-light {
-    background: var(--color-surface);
-    color: var(--color-text-primary);
-  }
-
-  .cta-headline {
-    font-size: var(--text-section);
-    font-weight: var(--font-black);
-    letter-spacing: -0.03em;
-    margin-bottom: var(--spacing-lg);
-  }
-
-  .cta-section-light .cta-headline {
-    color: var(--color-text-primary);
-  }
-
-  .cta-subheadline {
-    font-size: var(--text-subhead);
-    font-weight: var(--font-medium);
-    max-width: 450px;
-    margin: 0 auto var(--spacing-2xl);
-  }
-
-  .cta-section-dark .cta-subheadline {
-    color: color-mix(in srgb, var(--color-surface) 60%, transparent);
-  }
-
-  .cta-section-light .cta-subheadline {
-    color: var(--color-text-secondary);
-  }
-
-  .cta-btn {
-    font-size: var(--text-body);
-    font-weight: var(--font-bold);
-    border-radius: var(--radius-full);
-    padding: var(--spacing-lg) var(--spacing-2xl);
-    box-shadow: var(--shadow-sm);
-    transition: all 0.2s ease;
-
-    &:hover {
-      transform: translateY(-2px);
-    }
-  }
-
-  .cta-section-dark .cta-btn-primary {
-    background: var(--color-surface);
-    color: var(--color-surface-inverse);
-
-    &:hover {
-      background: color-mix(in srgb, var(--color-surface) 92%, black);
-    }
-  }
-
-  .cta-section-light .cta-btn-primary {
-    background: var(--color-surface-inverse);
-    color: var(--color-surface);
-
-    &:hover {
-      background: black;
-    }
-  }
-
-  .cta-section-dark .cta-btn-secondary {
-    background: color-mix(in srgb, var(--color-surface) 10%, transparent);
-    color: var(--color-surface);
-    border: 1px solid
-      color-mix(in srgb, var(--color-surface) 10%, transparent);
-    box-shadow: none;
-
-    &:hover {
-      background: color-mix(in srgb, var(--color-surface) 15%, transparent);
-    }
-  }
-
-  .cta-section-light .cta-btn-secondary {
-    background: color-mix(
-      in srgb,
-      var(--color-surface-inverse) 6%,
-      transparent
-    );
-    color: var(--color-text-primary);
-    border: 1px solid
-      color-mix(in srgb, var(--color-surface-inverse) 10%, transparent);
-    box-shadow: none;
-
-    &:hover {
-      background: color-mix(
-        in srgb,
-        var(--color-surface-inverse) 10%,
-        transparent
-      );
-    }
-  }
-}
-
-
 :where(.uix-about-section, uix-about-section) {
   display: block;
 
@@ -941,6 +679,88 @@
 
   .about-body li {
     margin-bottom: var(--spacing-xs);
+  }
+}
+
+
+:where(.uix-faq-section, uix-faq-section) {
+  display: block;
+
+  .faq-eyebrow {
+    display: inline-block;
+    background: var(--color-surface-inverse);
+    color: var(--color-surface);
+    font-size: var(--text-eyebrow);
+    font-weight: var(--font-bold);
+    padding: 6px var(--spacing-lg);
+    border-radius: var(--radius-full);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .faq-headline {
+    font-size: var(--text-section);
+    font-weight: var(--font-black);
+    letter-spacing: -0.03em;
+    color: var(--color-text-primary);
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .faq-subheadline {
+    font-size: var(--text-subhead);
+    font-weight: var(--font-medium);
+    color: var(--color-text-secondary);
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .faq-item {
+    background: var(--color-surface);
+    border-radius: var(--radius-card);
+    border: 1px solid
+      color-mix(in srgb, var(--color-text-primary) 8%, transparent);
+    box-shadow: var(--shadow-card);
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+
+  .faq-toggle {
+    width: 100%;
+    text-align: left;
+    padding: var(--spacing-xl) 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-lg);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .faq-question {
+    font-size: var(--text-body);
+    font-weight: var(--font-bold);
+    color: var(--color-text-primary);
+  }
+
+  .faq-chevron {
+    color: var(--color-text-muted);
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+  }
+
+  .faq-answer-wrap {
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+
+  .faq-answer {
+    padding: 0 28px;
+    font-size: 14px;
+    font-weight: var(--font-medium);
+    color: var(--color-text-secondary);
+    line-height: 1.6;
   }
 }
 
@@ -1149,80 +969,110 @@
 }
 
 
-:where(.uix-icon, uix-icon) {
-  display: inline-block;
-  vertical-align: middle;
-  width: var(--uix-icon-size, calc(var(--spacing, 0.25rem) * 4));
-  height: var(--uix-icon-size, calc(var(--spacing, 0.25rem) * 4));
+:where(.uix-cta-section, uix-cta-section) {
+  display: block;
 
-  svg {
-    height: inherit;
-    width: inherit;
+  .cta-section {
+    padding: var(--spacing-4xl) var(--spacing-xl);
   }
 
-  &[solid] {
-    stroke: currentColor;
-    fill: currentColor;
+  .cta-section-dark {
+    background: var(--color-surface-inverse);
+    color: var(--color-surface);
   }
 
-  &[color="primary"] {
-    color: var(--color-primary);
+  .cta-section-light {
+    background: var(--color-surface);
+    color: var(--color-text-primary);
   }
 
-  &[color="secondary"] {
-    color: var(--color-secondary);
+  .cta-headline {
+    font-size: var(--text-section);
+    font-weight: var(--font-black);
+    letter-spacing: -0.03em;
+    margin-bottom: var(--spacing-lg);
   }
 
-  &[color="success"] {
-    color: var(--color-success);
+  .cta-section-light .cta-headline {
+    color: var(--color-text-primary);
   }
 
-  &[color="danger"] {
-    color: var(--color-danger);
+  .cta-subheadline {
+    font-size: var(--text-subhead);
+    font-weight: var(--font-medium);
+    max-width: 450px;
+    margin: 0 auto var(--spacing-2xl);
   }
 
-  &[color="warning"] {
-    color: var(--color-warning);
+  .cta-section-dark .cta-subheadline {
+    color: color-mix(in srgb, var(--color-surface) 60%, transparent);
   }
 
-  &[color="info"] {
-    color: var(--color-info);
+  .cta-section-light .cta-subheadline {
+    color: var(--color-text-secondary);
   }
 
-  &[color="inverse"] {
-    color: var(--color-inverse);
+  .cta-btn {
+    font-size: var(--text-body);
+    font-weight: var(--font-bold);
+    border-radius: var(--radius-full);
+    padding: var(--spacing-lg) var(--spacing-2xl);
+    box-shadow: var(--shadow-sm);
+    transition: all 0.2s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+    }
   }
 
-  &[size="xs"] {
-    --uix-icon-size: calc(var(--spacing, 0.25rem) * 3);
+  .cta-section-dark .cta-btn-primary {
+    background: var(--color-surface);
+    color: var(--color-surface-inverse);
+
+    &:hover {
+      background: color-mix(in srgb, var(--color-surface) 92%, black);
+    }
   }
 
-  &[size="sm"] {
-    --uix-icon-size: calc(var(--spacing, 0.25rem) * 4);
+  .cta-section-light .cta-btn-primary {
+    background: var(--color-surface-inverse);
+    color: var(--color-surface);
+
+    &:hover {
+      background: black;
+    }
   }
 
-  &[size="md"] {
-    --uix-icon-size: calc(var(--spacing, 0.25rem) * 6);
+  .cta-section-dark .cta-btn-secondary {
+    background: color-mix(in srgb, var(--color-surface) 10%, transparent);
+    color: var(--color-surface);
+    border: 1px solid
+      color-mix(in srgb, var(--color-surface) 10%, transparent);
+    box-shadow: none;
+
+    &:hover {
+      background: color-mix(in srgb, var(--color-surface) 15%, transparent);
+    }
   }
 
-  &[size="lg"] {
-    --uix-icon-size: calc(var(--spacing, 0.25rem) * 8);
-  }
+  .cta-section-light .cta-btn-secondary {
+    background: color-mix(
+      in srgb,
+      var(--color-surface-inverse) 6%,
+      transparent
+    );
+    color: var(--color-text-primary);
+    border: 1px solid
+      color-mix(in srgb, var(--color-surface-inverse) 10%, transparent);
+    box-shadow: none;
 
-  &[size="xl"] {
-    --uix-icon-size: calc(var(--spacing, 0.25rem) * 10);
-  }
-
-  &[size="2xl"] {
-    --uix-icon-size: calc(var(--spacing, 0.25rem) * 14);
-  }
-
-  &[size="3xl"] {
-    --uix-icon-size: calc(var(--spacing, 0.25rem) * 20);
-  }
-
-  &[size="4xl"] {
-    --uix-icon-size: calc(var(--spacing, 0.25rem) * 30);
+    &:hover {
+      background: color-mix(
+        in srgb,
+        var(--color-surface-inverse) 10%,
+        transparent
+      );
+    }
   }
 }
 
@@ -1433,7 +1283,85 @@
   }
 }
 
-</style><link rel="stylesheet" href="/app/theme/theme.css" data-bootstrapp-theme=""><style id="dynamic-theme-vars">:root {
+
+:where(.uix-icon, uix-icon) {
+  display: inline-block;
+  vertical-align: middle;
+  width: var(--uix-icon-size, calc(var(--spacing, 0.25rem) * 4));
+  height: var(--uix-icon-size, calc(var(--spacing, 0.25rem) * 4));
+
+  svg {
+    height: inherit;
+    width: inherit;
+  }
+
+  &[solid] {
+    stroke: currentColor;
+    fill: currentColor;
+  }
+
+  &[color="primary"] {
+    color: var(--color-primary);
+  }
+
+  &[color="secondary"] {
+    color: var(--color-secondary);
+  }
+
+  &[color="success"] {
+    color: var(--color-success);
+  }
+
+  &[color="danger"] {
+    color: var(--color-danger);
+  }
+
+  &[color="warning"] {
+    color: var(--color-warning);
+  }
+
+  &[color="info"] {
+    color: var(--color-info);
+  }
+
+  &[color="inverse"] {
+    color: var(--color-inverse);
+  }
+
+  &[size="xs"] {
+    --uix-icon-size: calc(var(--spacing, 0.25rem) * 3);
+  }
+
+  &[size="sm"] {
+    --uix-icon-size: calc(var(--spacing, 0.25rem) * 4);
+  }
+
+  &[size="md"] {
+    --uix-icon-size: calc(var(--spacing, 0.25rem) * 6);
+  }
+
+  &[size="lg"] {
+    --uix-icon-size: calc(var(--spacing, 0.25rem) * 8);
+  }
+
+  &[size="xl"] {
+    --uix-icon-size: calc(var(--spacing, 0.25rem) * 10);
+  }
+
+  &[size="2xl"] {
+    --uix-icon-size: calc(var(--spacing, 0.25rem) * 14);
+  }
+
+  &[size="3xl"] {
+    --uix-icon-size: calc(var(--spacing, 0.25rem) * 20);
+  }
+
+  &[size="4xl"] {
+    --uix-icon-size: calc(var(--spacing, 0.25rem) * 30);
+  }
+}
+
+</style><style id="dynamic-theme-vars">:root {
   
 }</style><style id="project-theme-overrides">:root {
   --icon-family: lucide;
@@ -2406,11 +2334,11 @@
   --border-color: rgba(0,0,0,0.06);
 }</style></head>
 <body>
-<app-container class="app-container"><!----><bsp-website-page pagepath="/" slug="bootstrapp" class="bsp-website-page"><!----><uix-page class="uix-page"><!---->
-      <!--?lit$516190655$--><uix-site-header class="uix-site-header"><!---->
+<!----><bsp-website-page pagepath="/" slug="bootstrapp" class="bsp-website-page" loading=""><!----><uix-page class="uix-page"><!---->
+      <!--?lit$830915168$--><uix-site-header class="uix-site-header"><!---->
       <nav class="site-header-nav fixed top-6 left-0 right-0 z-50 mx-auto p-1.5 hidden md:flex items-center w-max">
         <a class="site-header-brand flex items-center justify-center mr-6 ml-1 cursor-pointer" href="#" aria-label="Bootstrapp">
-          <!--?lit$516190655$-->
+          <!--?lit$830915168$-->
   <svg width="20" height="20" viewBox="0 0 100 100" fill="none">
     <rect width="100" height="100" rx="16" fill="#0d0d0d"></rect>
     <circle cx="50" cy="50" r="28" fill="none" stroke="#e0a526" stroke-width="4"></circle>
@@ -2423,61 +2351,61 @@
 
         </a>
         <ul class="site-header-links flex items-center gap-7">
-          <!--?lit$516190655$--><!---->
+          <!--?lit$830915168$--><!---->
               <li>
-                <a href="#features"><!--?lit$516190655$-->Features</a>
+                <a href="#features"><!--?lit$830915168$-->Features</a>
               </li>
             <!----><!---->
               <li>
-                <a href="#how-it-works"><!--?lit$516190655$-->How it works</a>
+                <a href="#how-it-works"><!--?lit$830915168$-->How it works</a>
               </li>
             <!----><!---->
               <li>
-                <a href="#audience"><!--?lit$516190655$-->Who it's for</a>
+                <a href="#audience"><!--?lit$830915168$-->Who it's for</a>
               </li>
             <!----><!---->
               <li>
-                <a href="#faq"><!--?lit$516190655$-->FAQ</a>
+                <a href="#faq"><!--?lit$830915168$-->FAQ</a>
               </li>
             <!---->
         </ul>
         <div class="site-header-divider flex items-center gap-4 ml-6 pl-6">
-          <!--?lit$516190655$--><!----><a class="site-header-action-secondary px-2" href="https://discord.gg/PR6UxZFchA"><!--?lit$516190655$-->Join Discord</a><!----><!----><a class="site-header-action-primary px-6 py-2.5" href="https://app.bootstrapp.ai"><!--?lit$516190655$-->Try it free</a><!---->
+          <!--?lit$830915168$--><!----><a class="site-header-action-secondary px-2" href="https://discord.gg/PR6UxZFchA"><!--?lit$830915168$-->Join Discord</a><!----><!----><a class="site-header-action-primary px-6 py-2.5" href="https://app.bootstrapp.ai"><!--?lit$830915168$-->Try it free</a><!---->
         </div>
       </nav>
     </uix-site-header>
-      <!--?lit$516190655$--><!----><uix-hero-section headline="A workspace for the way you actually work." subheadline="Notes you'll find again. Tasks that don't slip. Projects you finish. On your machine — and on your phone when you're away from it." image="assets/landing/hero.png" class="uix-hero-section"><!---->
+      <!--?lit$830915168$--><!----><uix-hero-section headline="A workspace for the way you actually work." subheadline="Notes you'll find again. Tasks that don't slip. Projects you finish. On your machine — and on your phone when you're away from it." image="assets/landing/hero.png" class="uix-hero-section"><!---->
       <section class="relative pt-36 pb-24 px-4 min-h-[100vh] flex flex-col items-center">
         <div class="hero-bg"></div>
         <div class="max-w-[850px] mx-auto text-center z-10">
-          <!--?lit$516190655$--><a class="hero-eyebrow" href="https://discord.gg/PR6UxZFchA">
-                <!--?lit$516190655$--><span class="hero-eyebrow-badge"><!--?lit$516190655$-->Beta</span>
-                <span class="hero-eyebrow-label"><!--?lit$516190655$-->Now in early access</span>
-                <!--?lit$516190655$--><span class="hero-eyebrow-meta"><!--?lit$516190655$-->Join →</span>
+          <!--?lit$830915168$--><a class="hero-eyebrow" href="https://discord.gg/PR6UxZFchA">
+                <!--?lit$830915168$--><span class="hero-eyebrow-badge"><!--?lit$830915168$-->Beta</span>
+                <span class="hero-eyebrow-label"><!--?lit$830915168$-->Now in early access</span>
+                <!--?lit$830915168$--><span class="hero-eyebrow-meta"><!--?lit$830915168$-->Join →</span>
               </a>
-          <h1 class="hero-headline"><!--?lit$516190655$-->A workspace for the way you actually work.</h1>
-          <p class="hero-subheadline"><!--?lit$516190655$-->Notes you'll find again. Tasks that don't slip. Projects you finish. On your machine — and on your phone when you're away from it.</p>
+          <h1 class="hero-headline"><!--?lit$830915168$-->A workspace for the way you actually work.</h1>
+          <p class="hero-subheadline"><!--?lit$830915168$-->Notes you'll find again. Tasks that don't slip. Projects you finish. On your machine — and on your phone when you're away from it.</p>
           <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <!--?lit$516190655$--><!----><a class="hero-cta hero-cta-primary w-full sm:w-auto" href="https://app.bootstrapp.ai"><!--?lit$516190655$-->Try it free</a><!----><!----><a class="hero-cta hero-cta-secondary w-full sm:w-auto" href="https://discord.gg/PR6UxZFchA"><!--?lit$516190655$-->Join the Discord</a><!---->
+            <!--?lit$830915168$--><!----><a class="hero-cta hero-cta-primary w-full sm:w-auto" href="https://app.bootstrapp.ai"><!--?lit$830915168$-->Try it free</a><!----><!----><a class="hero-cta hero-cta-secondary w-full sm:w-auto" href="https://discord.gg/PR6UxZFchA"><!--?lit$830915168$-->Join the Discord</a><!---->
           </div>
         </div>
         <div class="mt-20 relative w-full max-w-[1040px] z-20">
-          <!--?lit$516190655$--><img alt="" class="w-full rounded-[24px] shadow-[0_24px_48px_-12px_rgba(0,0,0,0.12)] border border-gray-100/50" loading="lazy" src="assets/landing/hero.png">
+          <!--?lit$830915168$--><img alt="" class="w-full rounded-[24px] shadow-[0_24px_48px_-12px_rgba(0,0,0,0.12)] border border-gray-100/50" loading="lazy" src="assets/landing/hero.png">
         </div>
       </section>
     </uix-hero-section><!----><!----><uix-steps-section eyebrow="How it works" eyebrowicon="circle-dot" headline="Three steps. Then it's yours." subheadline="No signup wall. No setup weekend. Open the app and start working." sectionid="how-it-works" class="uix-steps-section"><!---->
       <section class="py-28 px-6 overflow-hidden" id="how-it-works">
         <div class="max-w-6xl mx-auto">
           <div class="text-center mb-20">
-            <!--?lit$516190655$--><span class="steps-eyebrow">
-                  <!--?lit$516190655$--><uix-icon class="w-3 h-3 uix-icon" name="circle-dot" svg="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;g fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot;&gt;&lt;circle cx=&quot;12&quot; cy=&quot;12&quot; r=&quot;10&quot;/&gt;&lt;circle cx=&quot;12&quot; cy=&quot;12&quot; r=&quot;1&quot;/&gt;&lt;/g&gt;&lt;/svg&gt;"><!----><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="1"></circle></g></svg></uix-icon>
-                  <!--?lit$516190655$-->How it works
+            <!--?lit$830915168$--><span class="steps-eyebrow">
+                  <!--?lit$830915168$--><uix-icon class="w-3 h-3 uix-icon" name="circle-dot" svg="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;g fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot;&gt;&lt;circle cx=&quot;12&quot; cy=&quot;12&quot; r=&quot;10&quot;/&gt;&lt;circle cx=&quot;12&quot; cy=&quot;12&quot; r=&quot;1&quot;/&gt;&lt;/g&gt;&lt;/svg&gt;"><!----><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="1"></circle></g></svg></uix-icon>
+                  <!--?lit$830915168$-->How it works
                 </span>
-            <!--?lit$516190655$--><h2 class="steps-headline"><!--?lit$516190655$-->Three steps. Then it's yours.</h2>
-            <!--?lit$516190655$--><p class="steps-subheadline"><!--?lit$516190655$-->No signup wall. No setup weekend. Open the app and start working.</p>
+            <!--?lit$830915168$--><h2 class="steps-headline"><!--?lit$830915168$-->Three steps. Then it's yours.</h2>
+            <!--?lit$830915168$--><p class="steps-subheadline"><!--?lit$830915168$-->No signup wall. No setup weekend. Open the app and start working.</p>
           </div>
           <div class="flex flex-col gap-24">
-            <!--?lit$516190655$--><!---->
+            <!--?lit$830915168$--><!---->
                 <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
                   <div class="flex-1 max-w-[480px]">
                     <div class="flex items-center gap-4 mb-6">
@@ -2485,19 +2413,19 @@
                         <uix-icon class="step-icon uix-icon" name="rocket" style="color: #F59E0B;" svg="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;g fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot;&gt;&lt;path d=&quot;M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2&quot;/&gt;&lt;path d=&quot;M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0m1 7v5s3.03-.55 4-2c1.08-1.62 0-5 0-5&quot;/&gt;&lt;/g&gt;&lt;/svg&gt;"><!----><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2"></path><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0m1 7v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"></path></g></svg></uix-icon>
                       </div>
                       <div>
-                        <span class="step-number">Step <!--?lit$516190655$-->01</span>
-                        <h3 class="step-title"><!--?lit$516190655$-->Open the app</h3>
+                        <span class="step-number">Step <!--?lit$830915168$-->01</span>
+                        <h3 class="step-title"><!--?lit$830915168$-->Open the app</h3>
                       </div>
                     </div>
-                    <p class="step-description"><!--?lit$516190655$-->Works in your browser. Works offline. Ready the moment the page loads.</p>
-                    <!--?lit$516190655$--><a class="step-cta group" href="https://app.bootstrapp.ai">
-                          <!--?lit$516190655$-->Try it free
+                    <p class="step-description"><!--?lit$830915168$-->Works in your browser. Works offline. Ready the moment the page loads.</p>
+                    <!--?lit$830915168$--><a class="step-cta group" href="https://app.bootstrapp.ai">
+                          <!--?lit$830915168$-->Try it free
                           <uix-icon name="arrow-right" class="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform uix-icon" svg="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;path fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot; d=&quot;M5 12h14m-7-7l7 7l-7 7&quot;/&gt;&lt;/svg&gt;"><!----><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-7-7l7 7l-7 7"></path></svg></uix-icon>
                         </a>
                   </div>
                   <div class="flex-1 max-w-[520px] w-full relative">
                     <div class="step-mockup-glow" style="background: linear-gradient(to bottom right, #FFF5EB, #FFFBF5);"></div>
-                    <div class="relative"><!--?lit$516190655$--><img alt="" class="w-full rounded-[20px] shadow-[0_8px_30px_rgba(0,0,0,0.06)] border border-gray-100" loading="lazy" src="assets/landing/step-01.png"></div>
+                    <div class="relative"><!--?lit$830915168$--><img alt="" class="w-full rounded-[20px] shadow-[0_8px_30px_rgba(0,0,0,0.06)] border border-gray-100" loading="lazy" src="assets/landing/step-01.png"></div>
                   </div>
                 </div>
               <!----><!---->
@@ -2508,19 +2436,19 @@
                         <uix-icon class="step-icon uix-icon" name="folder-tree" style="color: #3B82F6;" svg="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;g fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot;&gt;&lt;path d=&quot;M20 10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2.5a1 1 0 0 1-.8-.4l-.9-1.2A1 1 0 0 0 15 3h-2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Zm0 11a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-2.9a1 1 0 0 1-.88-.55l-.42-.85a1 1 0 0 0-.92-.6H13a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1ZM3 5a2 2 0 0 0 2 2h3&quot;/&gt;&lt;path d=&quot;M3 3v13a2 2 0 0 0 2 2h3&quot;/&gt;&lt;/g&gt;&lt;/svg&gt;"><!----><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M20 10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2.5a1 1 0 0 1-.8-.4l-.9-1.2A1 1 0 0 0 15 3h-2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Zm0 11a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-2.9a1 1 0 0 1-.88-.55l-.42-.85a1 1 0 0 0-.92-.6H13a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1ZM3 5a2 2 0 0 0 2 2h3"></path><path d="M3 3v13a2 2 0 0 0 2 2h3"></path></g></svg></uix-icon>
                       </div>
                       <div>
-                        <span class="step-number">Step <!--?lit$516190655$-->02</span>
-                        <h3 class="step-title"><!--?lit$516190655$-->Make it yours</h3>
+                        <span class="step-number">Step <!--?lit$830915168$-->02</span>
+                        <h3 class="step-title"><!--?lit$830915168$-->Make it yours</h3>
                       </div>
                     </div>
-                    <p class="step-description"><!--?lit$516190655$-->Pull in what you need: notes, tasks, projects, money. Skip what you don't.</p>
-                    <!--?lit$516190655$--><a class="step-cta group" href="#features">
-                          <!--?lit$516190655$-->See features
+                    <p class="step-description"><!--?lit$830915168$-->Pull in what you need: notes, tasks, projects, money. Skip what you don't.</p>
+                    <!--?lit$830915168$--><a class="step-cta group" href="#features">
+                          <!--?lit$830915168$-->See features
                           <uix-icon name="arrow-right" class="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform uix-icon" svg="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;path fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot; d=&quot;M5 12h14m-7-7l7 7l-7 7&quot;/&gt;&lt;/svg&gt;"><!----><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-7-7l7 7l-7 7"></path></svg></uix-icon>
                         </a>
                   </div>
                   <div class="flex-1 max-w-[520px] w-full relative">
                     <div class="step-mockup-glow" style="background: linear-gradient(to bottom right, #EFF6FF, #F5F8FF);"></div>
-                    <div class="relative"><!--?lit$516190655$--><img alt="" class="w-full rounded-[20px] shadow-[0_8px_30px_rgba(0,0,0,0.06)] border border-gray-100" loading="lazy" src="assets/landing/step-02.png"></div>
+                    <div class="relative"><!--?lit$830915168$--><img alt="" class="w-full rounded-[20px] shadow-[0_8px_30px_rgba(0,0,0,0.06)] border border-gray-100" loading="lazy" src="assets/landing/step-02.png"></div>
                   </div>
                 </div>
               <!----><!---->
@@ -2531,28 +2459,28 @@
                         <uix-icon class="step-icon uix-icon" name="shield-check" style="color: #10B981;" svg="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;g fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot;&gt;&lt;path d=&quot;M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z&quot;/&gt;&lt;path d=&quot;m9 12l2 2l4-4&quot;/&gt;&lt;/g&gt;&lt;/svg&gt;"><!----><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12l2 2l4-4"></path></g></svg></uix-icon>
                       </div>
                       <div>
-                        <span class="step-number">Step <!--?lit$516190655$-->03</span>
-                        <h3 class="step-title"><!--?lit$516190655$-->Yours, on every device</h3>
+                        <span class="step-number">Step <!--?lit$830915168$-->03</span>
+                        <h3 class="step-title"><!--?lit$830915168$-->Yours, on every device</h3>
                       </div>
                     </div>
-                    <p class="step-description"><!--?lit$516190655$-->Files stay on your machine. Pair your phone with a QR code to reach them anywhere. Push to a private GitHub repo for backup. Quit any time and your work goes with you.</p>
-                    <!--?lit$516190655$--><a class="step-cta group" href="https://discord.gg/PR6UxZFchA">
-                          <!--?lit$516190655$-->Join the community
+                    <p class="step-description"><!--?lit$830915168$-->Files stay on your machine. Pair your phone with a QR code to reach them anywhere. Push to a private GitHub repo for backup. Quit any time and your work goes with you.</p>
+                    <!--?lit$830915168$--><a class="step-cta group" href="https://discord.gg/PR6UxZFchA">
+                          <!--?lit$830915168$-->Join the community
                           <uix-icon name="arrow-right" class="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform uix-icon" svg="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;path fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot; d=&quot;M5 12h14m-7-7l7 7l-7 7&quot;/&gt;&lt;/svg&gt;"><!----><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14m-7-7l7 7l-7 7"></path></svg></uix-icon>
                         </a>
                   </div>
                   <div class="flex-1 max-w-[520px] w-full relative">
                     <div class="step-mockup-glow" style="background: linear-gradient(to bottom right, #ECFDF5, #F0FCFA);"></div>
-                    <div class="relative"><!--?lit$516190655$--><img alt="" class="w-full rounded-[20px] shadow-[0_8px_30px_rgba(0,0,0,0.06)] border border-gray-100" loading="lazy" src="assets/landing/step-03.png"></div>
+                    <div class="relative"><!--?lit$830915168$--><img alt="" class="w-full rounded-[20px] shadow-[0_8px_30px_rgba(0,0,0,0.06)] border border-gray-100" loading="lazy" src="assets/landing/step-03.png"></div>
                   </div>
                 </div>
               <!---->
           </div>
-          <!--?lit$516190655$--><div class="flex flex-col items-center mt-16">
+          <!--?lit$830915168$--><div class="flex flex-col items-center mt-16">
                 <div class="steps-footer-divider"></div>
                 <a class="steps-footer-cta" href="https://app.bootstrapp.ai">
-                  <!--?lit$516190655$--><uix-icon class="w-4 h-4 uix-icon" name="sparkles" svg="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;path fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot; d=&quot;M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0zM20 3v4m2-2h-4M4 17v2m1-1H3&quot;/&gt;&lt;/svg&gt;"><!----><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0zM20 3v4m2-2h-4M4 17v2m1-1H3"></path></svg></uix-icon>
-                  <!--?lit$516190655$-->Try it free at app.bootstrapp.ai
+                  <!--?lit$830915168$--><uix-icon class="w-4 h-4 uix-icon" name="sparkles" svg="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;path fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot; d=&quot;M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0zM20 3v4m2-2h-4M4 17v2m1-1H3&quot;/&gt;&lt;/svg&gt;"><!----><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0zM20 3v4m2-2h-4M4 17v2m1-1H3"></path></svg></uix-icon>
+                  <!--?lit$830915168$-->Try it free at app.bootstrapp.ai
                   <uix-icon name="arrow-up-right" class="w-3.5 h-3.5 uix-icon" svg="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;path fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot; d=&quot;M7 7h10v10M7 17L17 7&quot;/&gt;&lt;/svg&gt;"><!----><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h10v10M7 17L17 7"></path></svg></uix-icon>
                 </a>
               </div>
@@ -2562,68 +2490,68 @@
       <section id="features" class="feature-grid-section feature-grid-section-dark">
         <div class="max-w-6xl mx-auto">
           <div class="text-center mb-16">
-            <!--?lit$516190655$--><span class="feature-grid-eyebrow"><!--?lit$516190655$-->Features</span>
-            <!--?lit$516190655$--><h2 class="feature-grid-headline"><!--?lit$516190655$-->Everything you do. One place.</h2>
-            <!--?lit$516190655$--><p class="feature-grid-subheadline">
-                  <!--?lit$516190655$-->Each piece is its own thing. Turn on what you use, leave the rest.
+            <!--?lit$830915168$--><span class="feature-grid-eyebrow"><!--?lit$830915168$-->Features</span>
+            <!--?lit$830915168$--><h2 class="feature-grid-headline"><!--?lit$830915168$-->Everything you do. One place.</h2>
+            <!--?lit$830915168$--><p class="feature-grid-subheadline">
+                  <!--?lit$830915168$-->Each piece is its own thing. Turn on what you use, leave the rest.
                 </p>
           </div>
           <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
-            <!--?lit$516190655$--><!---->
+            <!--?lit$830915168$--><!---->
                 <div class="feature-card group">
                   <div class="feature-card-icon-box">
                     <uix-icon class="feature-card-icon uix-icon" name="file-text" svg="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;g fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot;&gt;&lt;path d=&quot;M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z&quot;/&gt;&lt;path d=&quot;M14 2v4a2 2 0 0 0 2 2h4M10 9H8m8 4H8m8 4H8&quot;/&gt;&lt;/g&gt;&lt;/svg&gt;"><!----><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path><path d="M14 2v4a2 2 0 0 0 2 2h4M10 9H8m8 4H8m8 4H8"></path></g></svg></uix-icon>
                   </div>
-                  <h3 class="feature-card-title"><!--?lit$516190655$-->Notes</h3>
-                  <p class="feature-card-desc"><!--?lit$516190655$-->Plain markdown with links, search, and a live preview. Files you'll still be able to read in ten years.</p>
+                  <h3 class="feature-card-title"><!--?lit$830915168$-->Notes</h3>
+                  <p class="feature-card-desc"><!--?lit$830915168$-->Plain markdown with links, search, and a live preview. Files you'll still be able to read in ten years.</p>
                 </div>
               <!----><!---->
                 <div class="feature-card group">
                   <div class="feature-card-icon-box">
                     <uix-icon class="feature-card-icon uix-icon" name="list-checks" svg="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;path fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot; d=&quot;m3 17l2 2l4-4M3 7l2 2l4-4m4 1h8m-8 6h8m-8 6h8&quot;/&gt;&lt;/svg&gt;"><!----><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m3 17l2 2l4-4M3 7l2 2l4-4m4 1h8m-8 6h8m-8 6h8"></path></svg></uix-icon>
                   </div>
-                  <h3 class="feature-card-title"><!--?lit$516190655$-->Tasks</h3>
-                  <p class="feature-card-desc"><!--?lit$516190655$-->A list when you need a list. A board when you need a board. Drag a card; the file updates.</p>
+                  <h3 class="feature-card-title"><!--?lit$830915168$-->Tasks</h3>
+                  <p class="feature-card-desc"><!--?lit$830915168$-->A list when you need a list. A board when you need a board. Drag a card; the file updates.</p>
                 </div>
               <!----><!---->
                 <div class="feature-card group">
                   <div class="feature-card-icon-box">
                     <uix-icon class="feature-card-icon uix-icon" name="folder-tree" svg="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;g fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot;&gt;&lt;path d=&quot;M20 10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2.5a1 1 0 0 1-.8-.4l-.9-1.2A1 1 0 0 0 15 3h-2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Zm0 11a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-2.9a1 1 0 0 1-.88-.55l-.42-.85a1 1 0 0 0-.92-.6H13a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1ZM3 5a2 2 0 0 0 2 2h3&quot;/&gt;&lt;path d=&quot;M3 3v13a2 2 0 0 0 2 2h3&quot;/&gt;&lt;/g&gt;&lt;/svg&gt;"><!----><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M20 10a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2.5a1 1 0 0 1-.8-.4l-.9-1.2A1 1 0 0 0 15 3h-2a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1Zm0 11a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-2.9a1 1 0 0 1-.88-.55l-.42-.85a1 1 0 0 0-.92-.6H13a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1ZM3 5a2 2 0 0 0 2 2h3"></path><path d="M3 3v13a2 2 0 0 0 2 2h3"></path></g></svg></uix-icon>
                   </div>
-                  <h3 class="feature-card-title"><!--?lit$516190655$-->Projects</h3>
-                  <p class="feature-card-desc"><!--?lit$516190655$-->Group what belongs together. Pages, files, and timelines, all in one tree you can browse like an editor.</p>
+                  <h3 class="feature-card-title"><!--?lit$830915168$-->Projects</h3>
+                  <p class="feature-card-desc"><!--?lit$830915168$-->Group what belongs together. Pages, files, and timelines, all in one tree you can browse like an editor.</p>
                 </div>
               <!----><!---->
                 <div class="feature-card group">
                   <div class="feature-card-icon-box">
                     <uix-icon class="feature-card-icon uix-icon" name="wallet" svg="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;g fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot;&gt;&lt;path d=&quot;M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1&quot;/&gt;&lt;path d=&quot;M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4&quot;/&gt;&lt;/g&gt;&lt;/svg&gt;"><!----><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1"></path><path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4"></path></g></svg></uix-icon>
                   </div>
-                  <h3 class="feature-card-title"><!--?lit$516190655$-->Money</h3>
-                  <p class="feature-card-desc"><!--?lit$516190655$-->A small ledger for income, expenses, and accounts. Yours, not your bank's.</p>
+                  <h3 class="feature-card-title"><!--?lit$830915168$-->Money</h3>
+                  <p class="feature-card-desc"><!--?lit$830915168$-->A small ledger for income, expenses, and accounts. Yours, not your bank's.</p>
                 </div>
               <!----><!---->
                 <div class="feature-card group">
                   <div class="feature-card-icon-box">
                     <uix-icon class="feature-card-icon uix-icon" name="bot" svg="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;g fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot;&gt;&lt;path d=&quot;M12 8V4H8&quot;/&gt;&lt;rect width=&quot;16&quot; height=&quot;12&quot; x=&quot;4&quot; y=&quot;8&quot; rx=&quot;2&quot;/&gt;&lt;path d=&quot;M2 14h2m16 0h2m-7-1v2m-6-2v2&quot;/&gt;&lt;/g&gt;&lt;/svg&gt;"><!----><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M12 8V4H8"></path><rect width="16" height="12" x="4" y="8" rx="2"></rect><path d="M2 14h2m16 0h2m-7-1v2m-6-2v2"></path></g></svg></uix-icon>
                   </div>
-                  <h3 class="feature-card-title"><!--?lit$516190655$-->Built-in agent</h3>
-                  <p class="feature-card-desc"><!--?lit$516190655$-->An assistant that reads and edits the same files you do. Ask from your desktop or your phone; the work lands in your workspace either way.</p>
+                  <h3 class="feature-card-title"><!--?lit$830915168$-->Built-in agent</h3>
+                  <p class="feature-card-desc"><!--?lit$830915168$-->An assistant that reads and edits the same files you do. Ask from your desktop or your phone; the work lands in your workspace either way.</p>
                 </div>
               <!----><!---->
                 <div class="feature-card group">
                   <div class="feature-card-icon-box">
                     <uix-icon class="feature-card-icon uix-icon" name="smartphone" svg="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;g fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot;&gt;&lt;rect width=&quot;14&quot; height=&quot;20&quot; x=&quot;5&quot; y=&quot;2&quot; rx=&quot;2&quot; ry=&quot;2&quot;/&gt;&lt;path d=&quot;M12 18h.01&quot;/&gt;&lt;/g&gt;&lt;/svg&gt;"><!----><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"></rect><path d="M12 18h.01"></path></g></svg></uix-icon>
                   </div>
-                  <h3 class="feature-card-title"><!--?lit$516190655$-->Across your devices</h3>
-                  <p class="feature-card-desc"><!--?lit$516190655$-->Pair your phone to your desktop with a QR code. Edit from the couch; the file on your laptop in the kitchen updates instantly. Direct peer-to-peer, no server in the middle.</p>
+                  <h3 class="feature-card-title"><!--?lit$830915168$-->Across your devices</h3>
+                  <p class="feature-card-desc"><!--?lit$830915168$-->Pair your phone to your desktop with a QR code. Edit from the couch; the file on your laptop in the kitchen updates instantly. Direct peer-to-peer, no server in the middle.</p>
                 </div>
               <!----><!---->
                 <div class="feature-card group">
                   <div class="feature-card-icon-box">
                     <uix-icon class="feature-card-icon uix-icon" name="github" svg="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;g fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot;&gt;&lt;path d=&quot;M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5c.08-1.25-.27-2.48-1-3.5c.28-1.15.28-2.35 0-3.5c0 0-1 0-3 1.5c-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5c-.39.49-.68 1.05-.85 1.65S8.93 17.38 9 18v4&quot;/&gt;&lt;path d=&quot;M9 18c-4.51 2-5-2-7-2&quot;/&gt;&lt;/g&gt;&lt;/svg&gt;"><!----><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5c.08-1.25-.27-2.48-1-3.5c.28-1.15.28-2.35 0-3.5c0 0-1 0-3 1.5c-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5c-.39.49-.68 1.05-.85 1.65S8.93 17.38 9 18v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></g></svg></uix-icon>
                   </div>
-                  <h3 class="feature-card-title"><!--?lit$516190655$-->GitHub sync</h3>
-                  <p class="feature-card-desc"><!--?lit$516190655$-->Push your workspace to a private repo whenever you want a backup or a way to share.</p>
+                  <h3 class="feature-card-title"><!--?lit$830915168$-->GitHub sync</h3>
+                  <p class="feature-card-desc"><!--?lit$830915168$-->Push your workspace to a private repo whenever you want a backup or a way to share.</p>
                 </div>
               <!---->
           </div>
@@ -2637,11 +2565,11 @@ Free to try at [app.bootstrapp.ai](https://app.bootstrapp.ai). Come hang out on 
       <section id="audience" class="about-section about-section-split">
         <div class="about-section-inner">
           <div class="about-section-head">
-            <!--?lit$516190655$--><span class="about-eyebrow"><!--?lit$516190655$-->Who it's for</span>
-            <!--?lit$516190655$--><h2 class="about-headline"><!--?lit$516190655$-->If you run a one-person operation, this is built for you.</h2>
-            <!--?lit$516190655$--><p class="about-subheadline"><!--?lit$516190655$-->Indie developers. Freelance writers. Side-project people. Founders of one.</p>
+            <!--?lit$830915168$--><span class="about-eyebrow"><!--?lit$830915168$-->Who it's for</span>
+            <!--?lit$830915168$--><h2 class="about-headline"><!--?lit$830915168$-->If you run a one-person operation, this is built for you.</h2>
+            <!--?lit$830915168$--><p class="about-subheadline"><!--?lit$830915168$-->Indie developers. Freelance writers. Side-project people. Founders of one.</p>
           </div>
-          <!--?lit$516190655$--><div class="about-body">
+          <!--?lit$830915168$--><div class="about-body">
                 <uix-markdown class="prose uix-markdown" content="You don't need a twelve-seat collaboration suite. You need a place to think, a place to keep your work, and a place to come back to it tomorrow.
 
 Bootstrapp.ai is offline-first because your tools shouldn't go down with someone else's status page. Your data lives on your machine. The assistant is in the app, not in another tab. When inspiration hits on your phone, it reaches the same workspace — direct from device to device, nothing in the middle. When you want to share, GitHub sync turns your workspace into a repo.
@@ -2657,69 +2585,69 @@ Free to try at [app.bootstrapp.ai](https://app.bootstrapp.ai). Come hang out on 
       <section class="py-28 px-6" id="faq">
         <div class="max-w-3xl mx-auto">
           <div class="text-center mb-16">
-            <!--?lit$516190655$--><span class="faq-eyebrow"><!--?lit$516190655$-->FAQ</span>
-            <!--?lit$516190655$--><h2 class="faq-headline"><!--?lit$516190655$-->Common questions</h2>
-            <!--?lit$516190655$-->
+            <!--?lit$830915168$--><span class="faq-eyebrow"><!--?lit$830915168$-->FAQ</span>
+            <!--?lit$830915168$--><h2 class="faq-headline"><!--?lit$830915168$-->Common questions</h2>
+            <!--?lit$830915168$-->
           </div>
           <div class="flex flex-col gap-3">
-            <!--?lit$516190655$--><!---->
+            <!--?lit$830915168$--><!---->
                 <div class="faq-item">
                   <button class="faq-toggle">
-                    <span class="faq-question"><!--?lit$516190655$-->What is Bootstrapp.ai?</span>
+                    <span class="faq-question"><!--?lit$830915168$-->What is Bootstrapp.ai?</span>
                     <uix-icon name="chevron-down" class="faq-chevron w-5 h-5 uix-icon" svg="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;path fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot; d=&quot;m6 9l6 6l6-6&quot;/&gt;&lt;/svg&gt;"><!----><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6 9l6 6l6-6"></path></svg></uix-icon>
                   </button>
                   <div class="faq-answer-wrap max-h-0">
-                    <p class="faq-answer"><!--?lit$516190655$-->An offline-first workspace for the things you make, track, and remember. Notes, tasks, projects, money, and a built-in assistant, all on top of one local file tree in your browser.</p>
+                    <p class="faq-answer"><!--?lit$830915168$-->An offline-first workspace for the things you make, track, and remember. Notes, tasks, projects, money, and a built-in assistant, all on top of one local file tree in your browser.</p>
                   </div>
                 </div>
               <!----><!---->
                 <div class="faq-item">
                   <button class="faq-toggle">
-                    <span class="faq-question"><!--?lit$516190655$-->Where does my data live?</span>
+                    <span class="faq-question"><!--?lit$830915168$-->Where does my data live?</span>
                     <uix-icon name="chevron-down" class="faq-chevron w-5 h-5 uix-icon" svg="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;path fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot; d=&quot;m6 9l6 6l6-6&quot;/&gt;&lt;/svg&gt;"><!----><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6 9l6 6l6-6"></path></svg></uix-icon>
                   </button>
                   <div class="faq-answer-wrap max-h-0">
-                    <p class="faq-answer"><!--?lit$516190655$-->On your machine. Bootstrapp.ai runs in your browser with offline support, and your workspace is files you own. Push them to a private GitHub repo when you want a backup or a way to share.</p>
+                    <p class="faq-answer"><!--?lit$830915168$-->On your machine. Bootstrapp.ai runs in your browser with offline support, and your workspace is files you own. Push them to a private GitHub repo when you want a backup or a way to share.</p>
                   </div>
                 </div>
               <!----><!---->
                 <div class="faq-item">
                   <button class="faq-toggle">
-                    <span class="faq-question"><!--?lit$516190655$-->Do I need an account?</span>
+                    <span class="faq-question"><!--?lit$830915168$-->Do I need an account?</span>
                     <uix-icon name="chevron-down" class="faq-chevron w-5 h-5 uix-icon" svg="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;path fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot; d=&quot;m6 9l6 6l6-6&quot;/&gt;&lt;/svg&gt;"><!----><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6 9l6 6l6-6"></path></svg></uix-icon>
                   </button>
                   <div class="faq-answer-wrap max-h-0">
-                    <p class="faq-answer"><!--?lit$516190655$-->No. Open the app and start. We use OAuth (GitHub or Google) only when you want to sync to a repo or use cloud-only features.</p>
+                    <p class="faq-answer"><!--?lit$830915168$-->No. Open the app and start. We use OAuth (GitHub or Google) only when you want to sync to a repo or use cloud-only features.</p>
                   </div>
                 </div>
               <!----><!---->
                 <div class="faq-item">
                   <button class="faq-toggle">
-                    <span class="faq-question"><!--?lit$516190655$-->Is the assistant included?</span>
+                    <span class="faq-question"><!--?lit$830915168$-->Is the assistant included?</span>
                     <uix-icon name="chevron-down" class="faq-chevron w-5 h-5 uix-icon" svg="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;path fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot; d=&quot;m6 9l6 6l6-6&quot;/&gt;&lt;/svg&gt;"><!----><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6 9l6 6l6-6"></path></svg></uix-icon>
                   </button>
                   <div class="faq-answer-wrap max-h-0">
-                    <p class="faq-answer"><!--?lit$516190655$-->Yes. It reads and edits the same files you do. We're shaping what it can do in the open on Discord. Come tell us what you'd want.</p>
+                    <p class="faq-answer"><!--?lit$830915168$-->Yes. It reads and edits the same files you do. We're shaping what it can do in the open on Discord. Come tell us what you'd want.</p>
                   </div>
                 </div>
               <!----><!---->
                 <div class="faq-item">
                   <button class="faq-toggle">
-                    <span class="faq-question"><!--?lit$516190655$-->Can I use it from my phone?</span>
+                    <span class="faq-question"><!--?lit$830915168$-->Can I use it from my phone?</span>
                     <uix-icon name="chevron-down" class="faq-chevron w-5 h-5 uix-icon" svg="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;path fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot; d=&quot;m6 9l6 6l6-6&quot;/&gt;&lt;/svg&gt;"><!----><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6 9l6 6l6-6"></path></svg></uix-icon>
                   </button>
                   <div class="faq-answer-wrap max-h-0">
-                    <p class="faq-answer"><!--?lit$516190655$-->Yes. Pair your phone to your desktop once with a QR code, and from then on you can read and edit your workspace from either device. Files stay on your computer; the phone is a thin client over a direct peer-to-peer connection.</p>
+                    <p class="faq-answer"><!--?lit$830915168$-->Yes. Pair your phone to your desktop once with a QR code, and from then on you can read and edit your workspace from either device. Files stay on your computer; the phone is a thin client over a direct peer-to-peer connection.</p>
                   </div>
                 </div>
               <!----><!---->
                 <div class="faq-item">
                   <button class="faq-toggle">
-                    <span class="faq-question"><!--?lit$516190655$-->Is it free?</span>
+                    <span class="faq-question"><!--?lit$830915168$-->Is it free?</span>
                     <uix-icon name="chevron-down" class="faq-chevron w-5 h-5 uix-icon" svg="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;path fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot; d=&quot;m6 9l6 6l6-6&quot;/&gt;&lt;/svg&gt;"><!----><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m6 9l6 6l6-6"></path></svg></uix-icon>
                   </button>
                   <div class="faq-answer-wrap max-h-0">
-                    <p class="faq-answer"><!--?lit$516190655$-->The web app at app.bootstrapp.ai is free to use during early access. We'll share pricing details before that changes.</p>
+                    <p class="faq-answer"><!--?lit$830915168$-->The web app at app.bootstrapp.ai is free to use during early access. We'll share pricing details before that changes.</p>
                   </div>
                 </div>
               <!---->
@@ -2729,21 +2657,21 @@ Free to try at [app.bootstrapp.ai](https://app.bootstrapp.ai). Come hang out on 
     </uix-faq-section><!----><!----><uix-cta-section variant="dark" headline="Ready when you are." subheadline="Open the app at app.bootstrapp.ai. Or come say hello on Discord first." class="uix-cta-section"><!---->
       <section class="cta-section cta-section-dark">
         <div class="max-w-4xl mx-auto text-center">
-          <!--?lit$516190655$--><h2 class="cta-headline"><!--?lit$516190655$-->Ready when you are.</h2>
-          <!--?lit$516190655$--><p class="cta-subheadline"><!--?lit$516190655$-->Open the app at app.bootstrapp.ai. Or come say hello on Discord first.</p>
+          <!--?lit$830915168$--><h2 class="cta-headline"><!--?lit$830915168$-->Ready when you are.</h2>
+          <!--?lit$830915168$--><p class="cta-subheadline"><!--?lit$830915168$-->Open the app at app.bootstrapp.ai. Or come say hello on Discord first.</p>
           <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <!--?lit$516190655$--><!----><a class="cta-btn cta-btn-primary w-full sm:w-auto" href="https://app.bootstrapp.ai"><!--?lit$516190655$-->Try it free</a><!----><!----><a class="cta-btn cta-btn-secondary w-full sm:w-auto" href="https://discord.gg/PR6UxZFchA"><!--?lit$516190655$-->Join the Discord</a><!---->
+            <!--?lit$830915168$--><!----><a class="cta-btn cta-btn-primary w-full sm:w-auto" href="https://app.bootstrapp.ai"><!--?lit$830915168$-->Try it free</a><!----><!----><a class="cta-btn cta-btn-secondary w-full sm:w-auto" href="https://discord.gg/PR6UxZFchA"><!--?lit$830915168$-->Join the Discord</a><!---->
           </div>
         </div>
       </section>
     </uix-cta-section><!---->
-      <!--?lit$516190655$--><uix-footer tagline="The workspace for solo builders" copyright="© 2026 Bootstrapp. All rights reserved." class="uix-footer"><!---->
+      <!--?lit$830915168$--><uix-footer tagline="The workspace for solo builders" copyright="© 2026 Bootstrapp. All rights reserved." class="uix-footer"><!---->
       <footer class="footer-root">
         <div class="footer-divider max-w-6xl mx-auto pt-12">
           <div class="grid md:grid-cols-4 gap-10 mb-12">
             <div>
               <div class="footer-brand flex items-center gap-2.5 mb-4">
-                <!--?lit$516190655$-->
+                <!--?lit$830915168$-->
   <svg width="20" height="20" viewBox="0 0 100 100" fill="none">
     <rect width="100" height="100" rx="16" fill="#0d0d0d"></rect>
     <circle cx="50" cy="50" r="28" fill="none" stroke="#e0a526" stroke-width="4"></circle>
@@ -2754,11 +2682,11 @@ Free to try at [app.bootstrapp.ai](https://app.bootstrapp.ai). Come hang out on 
     <line x1="64" y1="50" x2="78" y2="50" stroke="#e0a526" stroke-width="3" stroke-linecap="round"></line>
   </svg>
 
-                <!--?lit$516190655$-->Bootstrapp
+                <!--?lit$830915168$-->Bootstrapp
               </div>
-              <!--?lit$516190655$--><p class="footer-tagline"><!--?lit$516190655$-->The workspace for solo builders</p>
-              <!--?lit$516190655$--><div class="flex items-center gap-3 mt-4">
-                    <!--?lit$516190655$--><!---->
+              <!--?lit$830915168$--><p class="footer-tagline"><!--?lit$830915168$-->The workspace for solo builders</p>
+              <!--?lit$830915168$--><div class="flex items-center gap-3 mt-4">
+                    <!--?lit$830915168$--><!---->
                         <a class="footer-social" href="https://github.com/bootstrapphq/bootstrapp" aria-label="github">
                           <uix-icon class="w-4 h-4 uix-icon" name="github" svg="&lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; viewBox=&quot;0 0 24 24&quot; fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-width=&quot;2&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot;&gt;&lt;g fill=&quot;none&quot; stroke=&quot;currentColor&quot; stroke-linecap=&quot;round&quot; stroke-linejoin=&quot;round&quot; stroke-width=&quot;2&quot;&gt;&lt;path d=&quot;M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5c.08-1.25-.27-2.48-1-3.5c.28-1.15.28-2.35 0-3.5c0 0-1 0-3 1.5c-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5c-.39.49-.68 1.05-.85 1.65S8.93 17.38 9 18v4&quot;/&gt;&lt;path d=&quot;M9 18c-4.51 2-5-2-7-2&quot;/&gt;&lt;/g&gt;&lt;/svg&gt;"><!----><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5c.08-1.25-.27-2.48-1-3.5c.28-1.15.28-2.35 0-3.5c0 0-1 0-3 1.5c-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.4 5.4 0 0 0 4 9c0 3.5 3 5.5 6 5.5c-.39.49-.68 1.05-.85 1.65S8.93 17.38 9 18v4"></path><path d="M9 18c-4.51 2-5-2-7-2"></path></g></svg></uix-icon>
                         </a>
@@ -2769,40 +2697,40 @@ Free to try at [app.bootstrapp.ai](https://app.bootstrapp.ai). Come hang out on 
                       <!---->
                   </div>
             </div>
-            <!--?lit$516190655$--><!---->
+            <!--?lit$830915168$--><!---->
                 <div>
-                  <h4 class="footer-col-title"><!--?lit$516190655$-->Product</h4>
+                  <h4 class="footer-col-title"><!--?lit$830915168$-->Product</h4>
                   <ul class="flex flex-col gap-2.5">
-                    <!--?lit$516190655$--><!---->
+                    <!--?lit$830915168$--><!---->
                         <li>
-                          <a class="footer-link" href="#features"><!--?lit$516190655$-->Features</a>
+                          <a class="footer-link" href="#features"><!--?lit$830915168$-->Features</a>
                         </li>
                       <!----><!---->
                         <li>
-                          <a class="footer-link" href="#how-it-works"><!--?lit$516190655$-->How it works</a>
+                          <a class="footer-link" href="#how-it-works"><!--?lit$830915168$-->How it works</a>
                         </li>
                       <!----><!---->
                         <li>
-                          <a class="footer-link" href="#faq"><!--?lit$516190655$-->FAQ</a>
+                          <a class="footer-link" href="#faq"><!--?lit$830915168$-->FAQ</a>
                         </li>
                       <!----><!---->
                         <li>
-                          <a class="footer-link" href="https://app.bootstrapp.ai"><!--?lit$516190655$-->Open the app</a>
+                          <a class="footer-link" href="https://app.bootstrapp.ai"><!--?lit$830915168$-->Open the app</a>
                         </li>
                       <!---->
                   </ul>
                 </div>
               <!----><!---->
                 <div>
-                  <h4 class="footer-col-title"><!--?lit$516190655$-->Community</h4>
+                  <h4 class="footer-col-title"><!--?lit$830915168$-->Community</h4>
                   <ul class="flex flex-col gap-2.5">
-                    <!--?lit$516190655$--><!---->
+                    <!--?lit$830915168$--><!---->
                         <li>
-                          <a class="footer-link" href="https://discord.gg/PR6UxZFchA"><!--?lit$516190655$-->Discord</a>
+                          <a class="footer-link" href="https://discord.gg/PR6UxZFchA"><!--?lit$830915168$-->Discord</a>
                         </li>
                       <!----><!---->
                         <li>
-                          <a class="footer-link" href="https://github.com/bootstrapphq/bootstrapp"><!--?lit$516190655$-->GitHub</a>
+                          <a class="footer-link" href="https://github.com/bootstrapphq/bootstrapp"><!--?lit$830915168$-->GitHub</a>
                         </li>
                       <!---->
                   </ul>
@@ -2810,13 +2738,13 @@ Free to try at [app.bootstrapp.ai](https://app.bootstrapp.ai). Come hang out on 
               <!---->
           </div>
           <div class="footer-copyright footer-divider pt-8 text-center">
-            <!--?lit$516190655$-->© 2026 Bootstrapp. All rights reserved.
+            <!--?lit$830915168$-->© 2026 Bootstrapp. All rights reserved.
           </div>
         </div>
       </footer>
     </uix-footer>
-    </uix-page></bsp-website-page></app-container>
-<script>window.__BOOTSTRAPP_MANIFEST__ = {"importmap":{"diff":"https://esm.sh/diff@5.2.0","@bootstrapp/agent":"/app/agent/index.js","@bootstrapp/agent/":"/app/agent/","@bootstrapp/ai":"/app/ai/index.js","@bootstrapp/ai/":"/app/ai/","@bootstrapp/app":"/app/app/frontend.js","@bootstrapp/app/":"/app/app/","@bootstrapp/base":"/app/base/app.js","@bootstrapp/base/":"/app/base/","@bootstrapp/controller":"/app/controller/index.js","@bootstrapp/controller/":"/app/controller/","@bootstrapp/electron":"/app/electron/index.js","@bootstrapp/electron/":"/app/electron/","@bootstrapp/events":"/app/events/index.js","@bootstrapp/events/":"/app/events/","@bootstrapp/github":"/app/github/index.js","@bootstrapp/github/":"/app/github/","@bootstrapp/icon-lucide":"/app/icon-lucide/index.js","@bootstrapp/icon-lucide/":"/app/icon-lucide/","@bootstrapp/ide":"/app/ide/index.js","@bootstrapp/ide/":"/app/ide/","@bootstrapp/model":"/app/model/index.js","@bootstrapp/model/":"/app/model/","@bootstrapp/model-file":"/app/model-file/index.js","@bootstrapp/model-file/":"/app/model-file/","@bootstrapp/model-indexeddb":"/app/model-indexeddb/index.js","@bootstrapp/model-indexeddb/":"/app/model-indexeddb/","@bootstrapp/router":"/app/router/index.js","@bootstrapp/router/":"/app/router/","@bootstrapp/rpc":"/app/rpc/index.js","@bootstrapp/rpc/":"/app/rpc/","@bootstrapp/storage":"/app/storage/index.js","@bootstrapp/storage/":"/app/storage/","@bootstrapp/sw":"/app/sw/frontend.js","@bootstrapp/sw/":"/app/sw/","@bootstrapp/types":"/app/types/index.js","@bootstrapp/types/":"/app/types/","@bootstrapp/uix":"/app/uix/index.js","@bootstrapp/uix/":"/app/uix/","@bootstrapp/view":"/app/view/index.js","@bootstrapp/view/":"/app/view/","qrcode":"https://esm.sh/qrcode@1.5.4","@bootstrapp/p2p":"/app/p2p/index.js","@bootstrapp/p2p/":"/app/p2p/","@bootstrapp/admin":"/app/admin/index.js","@bootstrapp/admin/":"/app/admin/","@bootstrapp/cli":"/app/cli/types/index.ts","@bootstrapp/cli/":"/app/cli/","@bootstrapp/cloudflare":"/app/cloudflare/index.js","@bootstrapp/cloudflare/":"/app/cloudflare/","@unocss/core":"https://esm.sh/@unocss/core@66.6.6","@unocss/preset-uno":"https://esm.sh/@unocss/preset-uno@66.6.6","@unocss/preset-wind":"https://esm.sh/@unocss/preset-wind@66.6.6","esbuild-wasm":"https://esm.sh/esbuild-wasm@0.24.0","fflate":"https://esm.sh/fflate@0.8.2","javascript-obfuscator":"https://esm.sh/javascript-obfuscator@4.1.1","@bootstrapp/devops":"/app/devops/index.js","@bootstrapp/devops/":"/app/devops/","@bootstrapp/serve":"/app/serve/src/server.ts","@bootstrapp/serve/":"/app/serve/","@bootstrapp/tailwind":"/app/tailwind/index.js","@bootstrapp/tailwind/":"/app/tailwind/","@bootstrapp/theme":"/app/theme/index.js","@bootstrapp/theme/":"/app/theme/","marked":"/app/uix/display/marked-vendor.js","codemirror":"/app/uix/form/codemirror.js","lit-html":"/app/view/lit.js","trystero":"/app/p2p/vendor-trystero.js","tailwind-unocss":"/app/tailwind/unocss.js"},"packages":{"agent":{"components":{"agent":"views/"},"hasSchema":true,"icons":["circle-x"]},"ai":{"components":{"ai":"views/"},"hasSchema":true},"base":{"components":{"app":"app/"}},"github":{"components":{"github":"views/"}},"ide":{"components":{"ide":"views/"},"hasSchema":true,"namespace":false,"icons":["panel-left-open","panel-left-close","circle-dot"],"buildSteps":["./internal/bundle-extension-deps.js"]},"router":{"components":{"router":"./"}},"uix":{"components":{"uix":{"accordion":"navigation/accordion.js","breadcrumbs":"navigation/breadcrumbs.js","menu":"navigation/menu.js","navbar":"navigation/navbar.js","nav-item":"navigation/nav-item.js","pagination":"navigation/pagination.js","sidebar":"navigation/sidebar.js","tabs":"navigation/tabs.js","tree":"navigation/tree.js","tree-item":"navigation/tree-item.js","wizard":"navigation/wizard.js","alert-dialog":"overlay/alert-dialog.js","bottom-sheet":"overlay/bottom-sheet.js","drawer":"overlay/drawer.js","dropdown":"overlay/dropdown.js","modal":"overlay/modal.js","overlay":"overlay/overlay.js","popover":"overlay/popover.js","tooltip":"overlay/tooltip.js","popover-controller":"overlay/popover-controller.js","kanban":"display/kanban.js","avatar":"display/avatar.js","badge":"display/badge.js","button":"display/button.js","calendar":"display/calendar.js","circle":"display/circle.js","editable":"display/editable.js","heading":"display/heading.js","icon":"display/icon.js","icon-picker":"form/icon-picker.js","image":"display/image.js","link":"display/link.js","list":"display/list.js","list-item":"display/list-item.js","markdown":"display/markdown.js","media":"display/media.js","pattern":"display/pattern.js","stat":"display/stat.js","table":"display/table.js","data-table":"display/data-table.js","tag":"display/tag.js","text":"display/text.js","bar-chart":"display/bar-chart.js","line-chart":"display/line-chart.js","sparkline":"display/sparkline.js","pie-chart":"display/pie-chart.js","card":"layout/card.js","container":"layout/container.js","divider":"layout/divider.js","flex":"layout/flex.js","grid":"layout/grid.js","panel":"layout/panel.js","section":"layout/section.js","split-pane":"layout/split-pane.js","app-container":"app/app-container.js","app-shell":"app/app-shell.js","app-header":"app/app-header.js","bottom-nav":"app/bottom-nav.js","title-bar":"app/title-bar.js","progress-bar":"feedback/progress-bar.js","skeleton":"feedback/skeleton.js","spinner":"feedback/spinner.js","toast":"feedback/toast.js","alert":"feedback/alert.js","device":"utility/device.js","darkmode":"utility/darkmode.js","draggable":"utility/draggable.js","droparea":"utility/droparea.js","indexeddb-explorer":"utility/indexeddb-explorer.js","seo":"utility/seo.js","theme-toggle":"utility/theme-toggle.js","auth-form":"form/auth-form.js","checkbox":"form/checkbox.js","code":"form/code.js","file-upload":"form/file-upload.js","form":"form/form.js","form-control":"form/form-control.js","label":"form/label.js","input":"form/input.js","join":"form/join.js","number-input":"form/number-input.js","radio":"form/radio.js","radio-group":"form/radio-group.js","rating":"form/rating.js","select":"form/select.js","slider":"form/slider.js","switch":"form/switch.js","textarea":"form/textarea.js","time":"form/time.js","showcase":"docs/showcase.js","showcase-preview":"docs/showcase-preview.js","showcase-code-viewer":"docs/showcase-code-viewer.js","showcase-property-editor":"docs/showcase-property-editor.js","theme-generator":"docs/theme-generator.js","theme-editor":"theme/editor.js","ide-sidebar":"views/ide-sidebar.js","page":"layout/page.js","float-card":"page/float-card.js","site-header":"page/site-header.js","hero-section":"page/hero-section.js","feature-grid":"page/feature-grid.js","testimonial-section":"page/testimonial-section.js","faq-section":"page/faq-section.js","cta-section":"page/cta-section.js","footer":"page/footer.js","steps-section":"page/steps-section.js","about-section":"page/about-section.js","showcase-section":"page/showcase-section.js","pricing-card":"page/pricing-card.js","pricing-table":"page/pricing-table.js","stats-section":"page/stats-section.js"}},"icons":["activity","alarm-clock","apple","archive","arrow-down","arrow-left","arrow-right","arrow-up","at-sign","baby","banknote","bed","bell","bike","bluetooth","book","book-open","bookmark","brain","briefcase","bug","building","calendar","camera","cat","chart-bar","chart-line","chart-pie","check","chevron-down","chevron-left","chevron-right","chevron-up","circle","circle-check","circle-dot","circle-message","clipboard","clock","cloud","code","columns","compass","contact","copy","cpu","credit-card","crosshair","crown","database","dog","download","dumbbell","external-link","eye","file","file-audio","file-code","file-image","file-text","file-video","film","filter","fish","flag","flame","folder","folder-open","folder-plus","footprints","frown","gem","gift","git-branch","git-commit","git-merge","globe","graduation-cap","hammer","hand","hard-drive","hash","headphones","heart","heart-pulse","highlighter","house","image","inbox","kanban","key","lamp","layout-dashboard","layout-grid","layout-list","lightbulb","link","list","list-checks","list-todo","lock","mail","map","maximize","megaphone","menu","message-square","mic","minimize","minus","monitor","moon","move","music","navigation","notebook","package","paint-bucket","palette","paperclip","pause","pen","pencil","phone","pill","pin","play","plus","podcast","radio","receipt","refresh-cw","repeat","rotate-cw","rows","rss","ruler","save","scissors","search","send","server","settings","share","shield","shopping-bag","shopping-cart","sidebar","sliders-horizontal","smartphone","smile","sparkles","square","square-check","star","stethoscope","store","sun","table","tablet","tag","tags","target","terminal","thermometer","thumbs-down","thumbs-up","timer","trending-down","trending-up","trophy","tv","unlock","upload","user","user-check","user-plus","users","video","volume-2","wallet","wifi","wrench","zap"]},"p2p":{"components":{"p2p":"views/"}},"admin":{"components":{"admin":"views/"}},"devops":{"components":{"devops":"views/"},"hasSchema":true},"theme":{"components":{"theme":"views/"}}},"components":{"bsp":{"home":"views/home.js","home-sidebar":"views/home-sidebar.js","recent":"views/recent.js","raw-view":"views/raw-view.js"},"cs":"extensions/drillcode/views/"},"runtimeModules":{"frontend":[{"name":"app","path":"/app/app/frontend.js"},{"name":"controller","path":"/app/controller/frontend.js"},{"name":"model","path":"/app/model/frontend.js"},{"name":"model-file","path":"/app/model-file/frontend.js"},{"name":"router","path":"/app/router/frontend.js"},{"name":"storage","path":"/app/storage/frontend.js"},{"name":"sw","path":"/app/sw/frontend.js"},{"name":"view","path":"/app/view/frontend.js"},{"name":"p2p","path":"/app/p2p/frontend.js"},{"name":"theme","path":"/app/theme/frontend.js"}],"worker":[{"name":"app","path":"/app/app/backend.js"},{"name":"model","path":"/app/model/backend.js"},{"name":"p2p","path":"/app/p2p/backend.js"}],"serviceworker":[]},"autoload":{"frontend":["/app/icon-lucide/register.js","/app/tailwind/index.js"],"backend":[]},"database":{"adapter":"indexeddb","adapters":{"indexeddb":{"name":"bootstrapp","version":1}}},"basePath":"/_website/bootstrapp","theme":{"path":"/theme.js","admin":"gruvbox-dark","font":{"family":"system-ui, 'Manrope', 'Inter'","google":["Manrope"]},"icon":{"family":"lucide"},"runtime":true},"dev":{"scripts":["/app/controller/dev.js","/app/ide/dev.js","/app/model/dev.js","/app/model-indexeddb/dev.js","/app/router/dev.js","/app/view/dev.js","/app/devops/dev.js","/app/theme/dev.js","/dev.js"],"port":3500,"check":{"scope":"workspace"}},"frontendEntry":"/extensions/pages/runtime/website-frontend.js","websiteSlug":"bootstrapp","mode":"website-runtime"};</script>
-<script type="module" src="/app/base/bootstrapp.js"></script>
+    </uix-page></bsp-website-page>
+
+
 
 </body></html>
